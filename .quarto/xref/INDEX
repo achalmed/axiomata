@@ -1,0 +1,41 @@
+{
+  "index.qmd": {
+    "index.html": "8e396257"
+  },
+  "SECURITY.md": {
+    "SECURITY.html": "31ae4c32"
+  },
+  "economia-matematica/2024-03-31-por-editar/index.qmd": {
+    "index.html": "d72f8673",
+    "index.tex": "cc99745f",
+    "index.docx": "835b7040"
+  },
+  "economia-matematica/2025-04-14-economia-matematica-I/index.qmd": {
+    "index.html": "21d09b6f",
+    "index.tex": "7ece982e",
+    "index.docx": "5b7a1a6c"
+  },
+  "404.qmd": {
+    "404.html": "93696c56"
+  },
+  "posts/2025-05-28-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.qmd": {
+    "index.html": "63dcf4a4",
+    "index.tex": "96ec1d2d",
+    "index.docx": "52aff249"
+  },
+  "posts/2024-03-31-por-editar/index.qmd": {
+    "index.html": "278fbe05",
+    "index.tex": "2fae6ed3",
+    "index.docx": "9fa2449c"
+  },
+  "posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.qmd": {
+    "index.html": "c460fe34",
+    "index.tex": "5712207b",
+    "index.docx": "25ebb93a"
+  },
+  "posts/2025-05-20-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.qmd": {
+    "index.html": "b08f1e5a",
+    "index.tex": "7e02bdd7",
+    "index.docx": "da478cff"
+  }
+}
