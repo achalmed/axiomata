@@ -1,1 +1,1 @@
-1. [{{< fa regular file-pdf >}}](https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar/index.pdf) [Por Editar](https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar)
+1. [{{< fa regular file-pdf >}}](https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/index.pdf) [Economia Matematica I](https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I)

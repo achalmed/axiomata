@@ -1,1 +1,1 @@
-1. [{{< fa regular file-pdf >}}](https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar/index.pdf) [Por Editar](https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar)
+1. [{{< fa regular file-pdf >}}](https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.pdf) [Proporcionalidad De Magnitudes En Ciencias De La Comunicacion](https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion)
