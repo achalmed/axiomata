@@ -32,10 +32,11 @@ categories:
   - Ciencias de la Comunicación
   - Métodos Cuantitativos
 tags:
-  - Análisis de datos
-  - Proporciones
-  - Estrategias de comunicación
-  - Métricas digitales
+  - analisis_de_datos
+  - proporciones
+  - estrategias_de_comunicacion
+  - metricas_digitales
+  - mathematics
 
 # Nota del Autor
 author-note:

@@ -25,9 +25,9 @@ categories:
   - Economía Matemática
   - Macroeconomía
 tags:
-  - Matemáticas
-  - Equilibrio de Walras
-  - Modelos económicos
+  - mathematics
+  - equilibrio_de_walras
+  - modelos_economicos
 
 # Nota del Autor
 author-note:
