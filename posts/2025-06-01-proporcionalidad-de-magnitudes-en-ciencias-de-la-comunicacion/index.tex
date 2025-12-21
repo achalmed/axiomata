@@ -6,6 +6,7 @@
   nolmodern,
   notxfonts,
   notimes,
+  12pt,
   colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{apa7}
 
 \usepackage{amsmath}
@@ -17,8 +18,6 @@
 \babelprovide[main,import]{spanish}
 
 
-\babelfont{rm}[,RawFeature={fallback=mainfontfallback}]{Latin Modern
-Roman}
 % get rid of language-specific shorthands (see #6817):
 \let\LanguageShortHands\languageshorthands
 \def\languageshorthands#1{}
@@ -79,6 +78,46 @@ Roman}
 
 
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -148,13 +187,11 @@ Roman}
 
 
 
-\usepackage{fontspec} 
+\usepackage{newtx}
 
 \defaultfontfeatures{Scale=MatchLowercase}
 \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 
-  \setmainfont[,RawFeature={fallback=mainfontfallback}]{Latin Modern
-Roman}
 
 
 
@@ -243,14 +280,14 @@ Achalma, Email: \href{mailto:elmer.achalma.09@unsch.edu.pe}{elmer.achalma.09@uns
   \newcommand\contentsname{Tabla de contenidos}
 \fi
 \ifdefined\listfigurename
-  \renewcommand*\listfigurename{List of Figures}
+  \renewcommand*\listfigurename{Lista de Figuras}
 \else
-  \newcommand\listfigurename{List of Figures}
+  \newcommand\listfigurename{Lista de Figuras}
 \fi
 \ifdefined\listtablename
-  \renewcommand*\listtablename{List of Tables}
+  \renewcommand*\listtablename{Lista de Tablas}
 \else
-  \newcommand\listtablename{List of Tables}
+  \newcommand\listtablename{Lista de Tablas}
 \fi
 \ifdefined\figurename
   \renewcommand*\figurename{Figura}
@@ -267,7 +304,7 @@ Achalma, Email: \href{mailto:elmer.achalma.09@unsch.edu.pe}{elmer.achalma.09@uns
 \floatstyle{ruled}
 \@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
 \floatname{codelisting}{Listing}
-\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\newcommand*\listoflistings{\listof{codelisting}{Lista de Listings}}
 \makeatother
 \makeatletter
 \makeatother
@@ -310,14 +347,17 @@ Achalma, Email: \href{mailto:elmer.achalma.09@unsch.edu.pe}{elmer.achalma.09@uns
 
 \maketitle
 
+
 \hypertarget{toc}{}
 \tableofcontents
 \newpage
 \section[Introduction]{Proporcionalidad de Magnitudes}
 
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{3}
 
 \setlength\LTleft{0pt}
+
+
 
 
 Este trabajo monográfico analiza la aplicación de conceptos matemáticos
@@ -602,7 +642,7 @@ Publicaciones en redes sociales (\(x\), en publicaciones)
 Interacciones (\(y\), en cientos) & 20 & 40 & 60 & 80 & 100 \\
 \end{longtable}
 
-{\noindent \emph{Nota.} Elaboración propia}
+\noindent \emph{Nota.} Elaboración~propia
 
 \end{table}
 
@@ -628,15 +668,34 @@ k = \frac{y}{x} = \frac{1}{10}
 La relación directamente proporcional se representa como una línea recta
 que pasa por el origen.
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Relación entre Publicaciones en redes sociales e Interacciones}
+\CommentTok{\# Datos}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{2}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{6}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{10}\NormalTok{])  }\CommentTok{\# Publicaciones en redes sociales}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{20}\NormalTok{, }\DecValTok{40}\NormalTok{, }\DecValTok{60}\NormalTok{, }\DecValTok{80}\NormalTok{, }\DecValTok{100}\NormalTok{])  }\CommentTok{\# Interacciones (en cientos)}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-2-output-1.png}}
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.plot(x, y, }\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Datos observados\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot(x, }\DecValTok{10}\OperatorTok{*}\NormalTok{x, }\StringTok{\textquotesingle{}{-}{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}gray\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Línea de proporcionalidad ($y = 10x$)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Publicaciones en redes sociales ($x$, en publicaciones)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Interacciones ($y$, en cientos)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.title(\textquotesingle{}Relación entre Publicaciones e Interacciones\textquotesingle{})}
+\CommentTok{\# plt.grid(True)}
+\CommentTok{\# plt.legend()}
 
-}
+\CommentTok{\# Ocultar bordes (spines) superiores y derechos}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
 
-\end{figure}%
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsection{Caso General}\label{caso-general}
 
@@ -658,7 +717,7 @@ proporcionales}{\label{tbl-mytable2}}}}
 \(B\) & \(B_1\) & \(B_2\) & \(B_3\) \\
 \end{longtable}
 
-{\noindent \emph{Nota.} Elaboración propia}
+\noindent \emph{Nota.} Elaboración~propia
 
 \end{table}
 
@@ -711,7 +770,7 @@ Artículos publicados (\(x\)) & 1 & 2 & 3 & 4 & 5 \\
 Lectores (\(y\), en cientos) & 15 & 30 & 45 & 60 & 75 \\
 \end{longtable}
 
-{\noindent \emph{Nota.} Elaboración propia}
+\noindent \emph{Nota.} Elaboración~propia
 
 \end{table}
 
@@ -768,7 +827,7 @@ Tiempo de verificación (\(x\), en horas)
 Errores en publicaciones (\(y\), en cantidad) & 40 & 20 & 10 & 5 \\
 \end{longtable}
 
-{\noindent \emph{Nota.} Elaboración propia}
+\noindent \emph{Nota.} Elaboración~propia
 
 \end{table}
 
@@ -798,16 +857,34 @@ Gráfica}\label{representaciuxf3n-gruxe1fica-1}
 La relación inversamente proporcional se visualiza como una curva
 hiperbólica.
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Relación entre Tiempo de verificación y Errores en
-publicaciones}
+\CommentTok{\# Datos}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{8}\NormalTok{])  }\CommentTok{\# Tiempo de verificación (en horas)}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{40}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{10}\NormalTok{, }\DecValTok{5}\NormalTok{])  }\CommentTok{\# Errores en publicaciones (en cantidad)}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-3-output-1.png}}
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.plot(x, y, }\StringTok{\textquotesingle{}*{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Datos observados\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot(x, }\DecValTok{40}\OperatorTok{/}\NormalTok{x, }\StringTok{\textquotesingle{}{-}{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}gray\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Curva de proporcionalidad ($y = 40/x$)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Tiempo de verificación ($x$, en horas)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Errores en publicaciones ($y$, en cantidad)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.title(\textquotesingle{}Relación entre Verificación y Errores\textquotesingle{})}
+\CommentTok{\# plt.grid(True)}
+\CommentTok{\# plt.legend()}
 
-}
+\CommentTok{\# Ocultar bordes (spines) superiores y derechos}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
 
-\end{figure}%
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 La gráfica muestra cómo, al aumentar el tiempo de verificación, el
 número de errores disminuye, siguiendo una relación inversa.
@@ -832,7 +909,7 @@ proporcionales}{\label{tbl-mytable11}}}}
 \(B\) & \(B_1\) & \(B_2\) & \(B_3\) & \(\dots\) & \(B_n\) \\
 \end{longtable}
 
-{\noindent \emph{Nota.} Elaboración propia}
+\noindent \emph{Nota.} Elaboración~propia
 
 \end{table}
 
@@ -900,7 +977,7 @@ Frecuencia de titulares clickbait (\(x\), por semana)
 Confianza del lector (\(y\), en escala 1-50) & 5 & 15 & 25 & 45 \\
 \end{longtable}
 
-{\noindent \emph{Nota.} Elaboración propia}
+\noindent \emph{Nota.} Elaboración~propia
 
 \end{table}
 
@@ -1009,15 +1086,34 @@ Directo}\label{gruxe1fica-del-reparto-directo}
 La siguiente gráfica ilustra cómo se distribuye el presupuesto según las
 proporciones:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Distribución del presupuesto según número de publicaciones}
+\CommentTok{\# Datos}
+\NormalTok{proyectos }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}Proyecto 1\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Proyecto 2\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Proyecto 3\textquotesingle{}}\NormalTok{]}
+\NormalTok{proporciones }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{1}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{])}
+\NormalTok{montos }\OperatorTok{=}\NormalTok{ proporciones }\OperatorTok{*} \DecValTok{1500}  \CommentTok{\# k = 1500}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-4-output-1.png}}
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.bar(proyectos, montos, color}\OperatorTok{=}\StringTok{\textquotesingle{}skyblue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Monto asignado\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Proyectos\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Monto asignado (S/)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.title(\textquotesingle{}Reparto directo del presupuesto\textquotesingle{})}
+\CommentTok{\# plt.grid(True, axis=\textquotesingle{}y\textquotesingle{})}
+\CommentTok{\# plt.legend()}
 
-}
+\CommentTok{\# Ocultar bordes (spines) superiores y derechos}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
 
-\end{figure}%
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsection{Reparto Inverso}\label{reparto-inverso}
 
@@ -1072,15 +1168,35 @@ Inverso}\label{gruxe1fica-del-reparto-inverso}
 La siguiente gráfica se muestra cómo se distribuye el fondo según el
 tiempo de entrega:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Distribución del fondo según tiempo de entrega}
+\CommentTok{\# Datos}
+\NormalTok{equipos }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}Equipo 1\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Equipo 2\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Equipo 3\textquotesingle{}}\NormalTok{]}
+\NormalTok{tiempos }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{4}\NormalTok{])}
+\NormalTok{k }\OperatorTok{=} \FloatTok{34285.71}
+\NormalTok{montos }\OperatorTok{=}\NormalTok{ k }\OperatorTok{/}\NormalTok{ tiempos  }\CommentTok{\# k dividido por los tiempos}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-5-output-1.png}}
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.bar(equipos, montos, color}\OperatorTok{=}\StringTok{\textquotesingle{}lightcoral\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Monto asignado\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Equipos\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Monto asignado (S/)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.title(\textquotesingle{}Reparto inverso del fondo\textquotesingle{})}
+\CommentTok{\# plt.grid(True, axis=\textquotesingle{}y\textquotesingle{})}
+\CommentTok{\# plt.legend()}
 
-}
+\CommentTok{\# Ocultar bordes (spines) superiores y derechos}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
 
-\end{figure}%
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \section{Regla de Tres y Porcentajes}\label{regla-de-tres-y-porcentajes}
 
@@ -1133,15 +1249,34 @@ Directa.}\label{gruxe1fica-de-la-regla-de-tres-directa}
 La siguiente gráfica muestra la relación proporcional entre artículos y
 tiempo:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Relación entre número de artículos y tiempo de escritura}
+\CommentTok{\# Datos}
+\NormalTok{articulos }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{2}\NormalTok{, }\DecValTok{5}\NormalTok{])}
+\NormalTok{tiempo }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{4}\NormalTok{, }\DecValTok{10}\NormalTok{])}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-6-output-1.png}}
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.plot(articulos, tiempo, }\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Datos observados\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot(articulos, }\DecValTok{2}\OperatorTok{*}\NormalTok{articulos, }\StringTok{\textquotesingle{}{-}{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}gray\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Proporción ($y = 2x$)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Número de artículos\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Tiempo (horas)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.title(\textquotesingle{}Regla de tres simple directa\textquotesingle{})}
+\CommentTok{\# plt.grid(True)}
+\CommentTok{\# plt.legend()}
 
-}
+\CommentTok{\# Ocultar bordes (spines) superiores y derechos}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
 
-\end{figure}%
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsubsection{Regla de Tres Simple
 Inversa}\label{regla-de-tres-simple-inversa}
@@ -1182,15 +1317,34 @@ Inversa.}\label{gruxe1fica-de-la-regla-de-tres-inversa}
 La siguiente gráfica muestra la relación inversa entre máquinas y
 tiempo:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Relación entre número de máquinas y tiempo de impresión}
+\CommentTok{\# Datos}
+\NormalTok{maquinas }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{4}\NormalTok{, }\DecValTok{8}\NormalTok{])}
+\NormalTok{tiempo }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{12}\NormalTok{, }\FloatTok{2.67}\NormalTok{])}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-7-output-1.png}}
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.plot(maquinas, tiempo, }\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Datos observados\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot(maquinas, }\DecValTok{32}\OperatorTok{/}\NormalTok{maquinas, }\StringTok{\textquotesingle{}{-}{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}gray\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Proporción ($y = 32/x$)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Número de máquinas\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Tiempo (horas)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.title(\textquotesingle{}Regla de tres simple inversa\textquotesingle{})}
+\CommentTok{\# plt.grid(True)}
+\CommentTok{\# plt.legend()}
 
-}
+\CommentTok{\# Ocultar bordes (spines) superiores y derechos}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
 
-\end{figure}%
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsubsection{Regla de Tres Compuesta}\label{regla-de-tres-compuesta}
 
@@ -1361,15 +1515,30 @@ Se necesitan 21 horas para producir 7 videos.
 
 \textbf{Gráfica}:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Relación entre número de videos y tiempo de producción}
+\CommentTok{\# Datos}
+\NormalTok{videos }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{3}\NormalTok{, }\DecValTok{7}\NormalTok{])}
+\NormalTok{tiempo }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{9}\NormalTok{, }\DecValTok{21}\NormalTok{])}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-8-output-1.png}}
-
-}
-
-\end{figure}%
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.plot(videos, tiempo, }\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Datos observados\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot(videos, }\DecValTok{3}\OperatorTok{*}\NormalTok{videos, }\StringTok{\textquotesingle{}{-}{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}gray\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Proporción ($y = 3x$)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Número de videos\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Tiempo (horas)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.grid(True)}
+\NormalTok{plt.legend()}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsection{Ejercicio 2}\label{ejercicio-2}
 
@@ -1407,15 +1576,30 @@ Con 10 diseñadores, se tardarán 5 días.
 
 \textbf{Gráfica}:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Relación entre número de diseñadores y tiempo de creación}
+\CommentTok{\# Datos}
+\NormalTok{disenadores }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{5}\NormalTok{, }\DecValTok{10}\NormalTok{])}
+\NormalTok{tiempo }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{10}\NormalTok{, }\DecValTok{5}\NormalTok{])}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-9-output-1.png}}
-
-}
-
-\end{figure}%
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.plot(disenadores, tiempo, }\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Datos observados\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot(disenadores, }\DecValTok{50}\OperatorTok{/}\NormalTok{disenadores, }\StringTok{\textquotesingle{}{-}{-}\textquotesingle{}}\NormalTok{, color}\OperatorTok{=}\StringTok{\textquotesingle{}gray\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Proporción ($y = 50/x$)\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Número de diseñadores\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Tiempo (días)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.grid(True)}
+\NormalTok{plt.legend()}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsection{Ejercicio 3}\label{ejercicio-3}
 
@@ -1468,15 +1652,30 @@ Las campañas reciben S/ 3,000, S/ 4,500 y S/ 7,500, respectivamente.
 
 \textbf{Gráfica}:
 
-\begin{figure}[H]
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
 
-\caption{Distribución del presupuesto según número de anuncios}
+\CommentTok{\# Datos}
+\NormalTok{campanas }\OperatorTok{=}\NormalTok{ [}\StringTok{\textquotesingle{}Campaña 1\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Campaña 2\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}Campaña 3\textquotesingle{}}\NormalTok{]}
+\NormalTok{proporciones }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{5}\NormalTok{])}
+\NormalTok{montos }\OperatorTok{=}\NormalTok{ proporciones }\OperatorTok{*} \DecValTok{1500}
 
-{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/cell-10-output-1.png}}
-
-}
-
-\end{figure}%
+\CommentTok{\# Gráfica}
+\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{6}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\NormalTok{plt.bar(campanas, montos, color}\OperatorTok{=}\StringTok{\textquotesingle{}skyblue\textquotesingle{}}\NormalTok{, label}\OperatorTok{=}\StringTok{\textquotesingle{}Monto asignado\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Campañas\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Monto asignado (S/)\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# plt.grid(True, axis=\textquotesingle{}y\textquotesingle{})}
+\NormalTok{plt.legend()}
+\NormalTok{ax }\OperatorTok{=}\NormalTok{ plt.gca()}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}top\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{ax.spines[}\StringTok{\textquotesingle{}right\textquotesingle{}}\NormalTok{].set\_visible(}\VariableTok{False}\NormalTok{)}
+\NormalTok{plt.tight\_layout()}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
 
 \subsection{Ejercicio 4}\label{ejercicio-4}
 
@@ -1539,6 +1738,8 @@ estudiantes.
 
 \section{Bibliografía y
 referencias}\label{bibliografuxeda-y-referencias}
+
+\section{Referencias}
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}

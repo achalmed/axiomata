@@ -1,1 +1,1 @@
-Sitemap: https://achalmaedison.netlify.app/sitemap.xml
+Sitemap: https://axiomata.netlify.app/sitemap.xml
