@@ -3,8 +3,7 @@ documentmode: stu
 course: Matemáticas Aplicadas a la Comunicación
 copyrightnotice: 2025
 copyrightext: All rights reserved
-title: Proporcionalidad de Magnitudes
-shorttitle: null
+title: Proporcionalidad en ciencias comunicación
 abstract: Este trabajo explora los fundamentos matemáticos de la proporcionalidad
   y sus aplicaciones en el campo de las Ciencias de la Comunicación. Se analizan conceptos
   clave como razones, proporciones y magnitudes, junto con sus implementaciones prácticas
@@ -19,14 +18,9 @@ keywords:
 - estrategias mediáticas
 categories:
 - Matemáticas
-- Ciencias de la Comunicación
-- Métodos Cuantitativos
 tags:
-- analisis_de_datos
-- proporciones
-- estrategias_de_comunicacion
-- metricas_digitales
 - mathematics
+- proporcionalidad_comunicacion
 author-note:
   status-changes:
     affiliation-change: null
@@ -48,17 +42,20 @@ author-note:
       de un esfuerzo colectivo, y por ello, mi más profundo reconocimiento a quienes
       hicieron posible su culminación.
     authorship-agreements: null
-description: ''
-bibliography: mybibliography.bib
+description: Aplicación de conceptos matemáticos de proporcionalidad y escalamiento
+  a fenómenos de difusión, audiencia y métricas en ciencias de la comunicación.
+eval: true
 citation:
   type: article-journal
   author:
   - Edison Achalma
-  pdf-url: https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar/index.pdf
-date: 05/20/2025
+  pdf-url: https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.pdf
+date: 06/01/2025
 draft: false
-eval: true
+bibliography: mybibliography.bib
 jupyter: python3
+image: ../featured.jpg
+duedate: 06/01/2025
 ---
 
 Este trabajo monográfico analiza la aplicación de conceptos matemáticos de proporcionalidad, como la regla de tres, el reparto proporcional en el ámbito de las ciencias de la comunicación. Estas herramientas permiten resolver problemas prácticos, optimizar procesos y tomar decisiones informadas basadas en datos cuantitativos, en un contexto donde la precisión y la eficiencia son esenciales. El objetivo es demostrar cómo estas técnicas matemáticas, fundamentadas en razones y proporciones, se integran en la planificación estratégica, la distribución equitativa de recursos y la evaluación de resultados.
@@ -253,7 +250,7 @@ $$
 
 La relación directamente proporcional se representa como una línea recta que pasa por el origen. 
 
-::: {#697a3e1c .cell}
+::: {#db89cfc9 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -375,7 +372,7 @@ $$
 
 La relación inversamente proporcional se visualiza como una curva hiperbólica.
 
-::: {#fe507908 .cell}
+::: {#dcc769d0 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -534,7 +531,7 @@ Los proyectos reciben S/ 1,500, S/ 4,500 y S/ 6,000, respectivamente.
 
 La siguiente gráfica ilustra cómo se distribuye el presupuesto según las proporciones:
 
-::: {#028c2c56 .cell}
+::: {#903fbf14 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -610,7 +607,7 @@ Los equipos reciben aproximadamente S/ 34,286, S/ 17,143 y S/ 8,571, respectivam
 
 La siguiente gráfica se muestra cómo se distribuye el fondo según el tiempo de entrega:
 
-::: {#30b04dd5 .cell}
+::: {#e2ad1c06 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -683,7 +680,7 @@ Tomará 10 horas escribir 5 artículos.
 
 La siguiente gráfica muestra la relación proporcional entre artículos y tiempo:
 
-::: {#e29d1390 .cell}
+::: {#80df8ffb .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -747,7 +744,7 @@ Con 12 máquinas, tomará aproximadamente 2.67 horas.
 
 La siguiente gráfica muestra la relación inversa entre máquinas y tiempo:
 
-::: {#90559b66 .cell}
+::: {#ef0dc79d .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -921,7 +918,7 @@ Se necesitan 21 horas para producir 7 videos.
 
 **Gráfica**:
 
-::: {#49b73d3d .cell}
+::: {#47d29ca9 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -979,7 +976,7 @@ Con 10 diseñadores, se tardarán 5 días.
 
 **Gráfica**:
 
-::: {#dab970ff .cell}
+::: {#a465a4cf .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -1053,7 +1050,7 @@ Las campañas reciben S/ 3,000, S/ 4,500 y S/ 7,500, respectivamente.
 
 **Gráfica**:
 
-::: {#9fadad1a .cell}
+::: {#60649c67 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np

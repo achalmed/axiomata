@@ -18,9 +18,9 @@ Incluye notas y tutoriales para mi futuro y espero que también para ti.&lt;br&g
 <link>https://axiomata.netlify.app/</link>
 </image>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 20 May 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 01 Jun 2025 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>Proporcionalidad de Magnitudes</title>
+  <title>Proporcionalidad en ciencias comunicación</title>
   <dc:creator>Edison Achalma</dc:creator>
   <link>https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/</link>
   <description><![CDATA[ 
@@ -170,7 +170,7 @@ z-index: 0;
 <h2 class="anchored" data-anchor-id="magnitudes-directamente-proporcionales">Magnitudes Directamente Proporcionales</h2>
 <p>Dos magnitudes son directamente proporcionales si al multiplicar o dividir una por un número, la otra también se multiplica o divide por ese mismo número.</p>
 <p>Consideremos la relación entre el <strong>número de publicaciones en redes sociales</strong> de un medio periodístico y el <strong>número de interacciones</strong> (likes, comentarios, compartidos) que estas generan. La siguiente tabla muestra datos hipotéticos:</p>
-<div id="tbl-mytable4" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-disable-processing="true" data-apa-note="Elaboración propia">
+<div id="tbl-mytable4" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="Elaboración propia" data-quarto-disable-processing="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabla&nbsp;1: Relación entre Publicaciones en redes sociales e Interacciones
@@ -218,7 +218,7 @@ Tabla&nbsp;1: Relación entre Publicaciones en redes sociales e Interacciones
 <section id="representación-gráfica" class="level2">
 <h2 class="anchored" data-anchor-id="representación-gráfica">Representación Gráfica</h2>
 <p>La relación directamente proporcional se representa como una línea recta que pasa por el origen.</p>
-<div id="697a3e1c" class="cell">
+<div id="db89cfc9" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
@@ -343,7 +343,7 @@ font-style: inherit;">False</span>)</span>
 <section id="caso-general" class="level2">
 <h2 class="anchored" data-anchor-id="caso-general">Caso General</h2>
 <p>Para cualquier par de magnitudes directamente proporcionales <img src="https://latex.codecogs.com/png.latex?A"> e <img src="https://latex.codecogs.com/png.latex?B">, se cumple:</p>
-<div id="tbl-mytable2" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-disable-processing="true" data-apa-note="Elaboración propia">
+<div id="tbl-mytable2" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="Elaboración propia" data-quarto-disable-processing="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabla&nbsp;2: Magnitudes directamente proporcionales
@@ -383,7 +383,7 @@ Tabla&nbsp;2: Magnitudes directamente proporcionales
 <p>donde <img src="https://latex.codecogs.com/png.latex?f(x)"> es la magnitud dependiente (en este caso, las interacciones), <img src="https://latex.codecogs.com/png.latex?x"> es la magnitud independiente (publicaciones) y <img src="https://latex.codecogs.com/png.latex?k"> es la constante de proporcionalidad.</p>
 <p><strong>Ejemplo</strong> Artículos Publicados y Lectores</p>
 <p>Ahora, consideremos otro ejemplo. Supongamos que el <strong>número de artículos publicados</strong> en un sitio web periodístico está relacionado con el <strong>número de lectores</strong> que visitan el sitio:</p>
-<div id="tbl-mytable8" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-disable-processing="true" data-apa-note="Elaboración propia">
+<div id="tbl-mytable8" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="Elaboración propia" data-quarto-disable-processing="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabla&nbsp;3: Relación entre Artículos publicados y Lectores
@@ -423,7 +423,7 @@ Tabla&nbsp;3: Relación entre Artículos publicados y Lectores
 <h2 class="anchored" data-anchor-id="magnitudes-inversamente-proporcionales">Magnitudes Inversamente Proporcionales</h2>
 <p>Dos magnitudes son inversamente proporcionales si al aumentar una, la otra disminuye en la misma proporción, y viceversa</p>
 <p>Imagina un medio periodístico que verifica noticias antes de publicarlas. A mayor <strong>tiempo dedicado a verificar noticias</strong>, menor es el <strong>número de errores</strong> en las publicaciones. La siguiente tabla se muestra los datos:</p>
-<div id="tbl-mytable10" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-disable-processing="true" data-apa-note="Elaboración propia">
+<div id="tbl-mytable10" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="Elaboración propia" data-quarto-disable-processing="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabla&nbsp;4: Relación entre Tiempo de verificación y Errores en publicaciones
@@ -469,7 +469,7 @@ Tabla&nbsp;4: Relación entre Tiempo de verificación y Errores en publicaciones
 <section id="representación-gráfica-1" class="level2">
 <h2 class="anchored" data-anchor-id="representación-gráfica-1">Representación Gráfica</h2>
 <p>La relación inversamente proporcional se visualiza como una curva hiperbólica.</p>
-<div id="fe507908" class="cell">
+<div id="dcc769d0" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
@@ -591,7 +591,7 @@ font-style: inherit;">False</span>)</span>
 <section id="caso-general-1" class="level2">
 <h2 class="anchored" data-anchor-id="caso-general-1">Caso General</h2>
 <p>Para dos magnitudes inversamente proporcionales <img src="https://latex.codecogs.com/png.latex?A"> e <img src="https://latex.codecogs.com/png.latex?B">, se cumple:</p>
-<div id="tbl-mytable11" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-disable-processing="true" data-apa-note="Elaboración propia">
+<div id="tbl-mytable11" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="Elaboración propia" data-quarto-disable-processing="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabla&nbsp;5: Magnitudes inversamente proporcionales
@@ -635,7 +635,7 @@ Tabla&nbsp;5: Magnitudes inversamente proporcionales
 <p>donde <img src="https://latex.codecogs.com/png.latex?y"> es la magnitud dependiente (errores), <img src="https://latex.codecogs.com/png.latex?x"> es la magnitud independiente (tiempo de verificación) y <img src="https://latex.codecogs.com/png.latex?k"> es la constante de proporcionalidad inversa.</p>
 <p><strong>Ejemplo</strong> Frecuencia de Titulares Clickbait y Confianza del Lector</p>
 <p>Consideremos otro ejemplo: la relación entre la <strong>frecuencia de titulares clickbait</strong> (titulares exagerados para atraer clics) y la <strong>confianza del lector</strong> en un medio:</p>
-<div id="tbl-mytable12" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-disable-processing="true" data-apa-note="Elaboración propia">
+<div id="tbl-mytable12" class="quarto-float quarto-figure quarto-figure-center anchored" data-apa-note="Elaboración propia" data-quarto-disable-processing="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabla&nbsp;6: Relación entre Frecuencia de titulares clickbait y Confianza del lector
@@ -713,7 +713,7 @@ Tabla&nbsp;6: Relación entre Frecuencia de titulares clickbait y Confianza del 
 <section id="gráfica-del-reparto-directo" class="level3">
 <h3 class="anchored" data-anchor-id="gráfica-del-reparto-directo">Gráfica del Reparto Directo</h3>
 <p>La siguiente gráfica ilustra cómo se distribuye el presupuesto según las proporciones:</p>
-<div id="028c2c56" class="cell">
+<div id="903fbf14" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
@@ -832,7 +832,7 @@ font-style: inherit;">False</span>)</span>
 <section id="gráfica-del-reparto-inverso" class="level3">
 <h3 class="anchored" data-anchor-id="gráfica-del-reparto-inverso">Gráfica del Reparto Inverso</h3>
 <p>La siguiente gráfica se muestra cómo se distribuye el fondo según el tiempo de entrega:</p>
-<div id="30b04dd5" class="cell">
+<div id="e2ad1c06" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
@@ -960,7 +960,7 @@ font-style: inherit;">False</span>)</span>
 <section id="gráfica-de-la-regla-de-tres-directa" class="level4">
 <h4 class="anchored" data-anchor-id="gráfica-de-la-regla-de-tres-directa">Gráfica de la Regla de Tres Directa</h4>
 <p>La siguiente gráfica muestra la relación proporcional entre artículos y tiempo:</p>
-<div id="e29d1390" class="cell">
+<div id="80df8ffb" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
@@ -1082,7 +1082,7 @@ font-style: inherit;">False</span>)</span>
 <section id="gráfica-de-la-regla-de-tres-inversa" class="level4">
 <h4 class="anchored" data-anchor-id="gráfica-de-la-regla-de-tres-inversa">Gráfica de la Regla de Tres Inversa</h4>
 <p>La siguiente gráfica muestra la relación inversa entre máquinas y tiempo:</p>
-<div id="90559b66" class="cell">
+<div id="ef0dc79d" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="im" style="color: #00769E;
@@ -1264,7 +1264,7 @@ font-style: inherit;">False</span>)</span>
 <p><img src="https://latex.codecogs.com/png.latex?%0A3x%20=%2063%20%5Cquad%20%5CRightarrow%20%5Cquad%20x%20=%20%5Cfrac%7B63%7D%7B3%7D%20=%2021%0A"></p>
 <p>Se necesitan 21 horas para producir 7 videos.</p>
 <p><strong>Gráfica</strong>:</p>
-<div id="49b73d3d" class="cell">
+<div id="47d29ca9" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="im" style="color: #00769E;
@@ -1373,7 +1373,7 @@ font-style: inherit;">False</span>)</span>
 <p><img src="https://latex.codecogs.com/png.latex?%0A50%20=%2010x%20%5Cquad%20%5CRightarrow%20%5Cquad%20x%20=%20%5Cfrac%7B50%7D%7B10%7D%20=%205%0A"></p>
 <p>Con 10 diseñadores, se tardarán 5 días.</p>
 <p><strong>Gráfica</strong>:</p>
-<div id="dab970ff" class="cell">
+<div id="a465a4cf" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="im" style="color: #00769E;
@@ -1485,7 +1485,7 @@ font-style: inherit;">False</span>)</span>
 <p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bcases%7D%0A2k%20=%202%20%5Ccdot%201,500%20=%203,000%20%5C%0A3k%20=%203%20%5Ccdot%201,500%20=%204,500%20%5C%0A5k%20=%205%20%5Ccdot%201,500%20=%207,500%20%5C%0A%5Cend%7Bcases%7D%0A"></p>
 <p>Las campañas reciben S/ 3,000, S/ 4,500 y S/ 7,500, respectivamente.</p>
 <p><strong>Gráfica</strong>:</p>
-<div id="9fadad1a" class="cell">
+<div id="60649c67" class="cell">
 <details class="code-fold">
 <summary>Mostrar el código</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="im" style="color: #00769E;
@@ -1619,14 +1619,13 @@ Park, Jung-Sook. 2008. <span>«The Historical Developments Process of the Repres
 Thorup, Anders. 1992. <span>«A Pre-Euclidean Theory of Proportions»</span>. <em>Archive for History of Exact Sciences</em> 45 (1): 1-16. <a href="https://doi.org/10.1007/BF00375885">https://doi.org/10.1007/BF00375885</a>.
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-achalma2025" class="csl-entry quarto-appendix-citeas">
-Achalma, Edison. 2025. <span>“Proporcionalidad de Magnitudes,”</span>
-May. <a href="https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/">https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/</a>.
+Achalma, Edison. 2025. <span>“Proporcionalidad en ciencias
+comunicación,”</span> June. <a href="https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/">https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/</a>.
 </div></div></section></div> ]]></description>
   <category>Matemáticas</category>
-  <category>Ciencias de la Comunicación</category>
-  <category>Métodos Cuantitativos</category>
   <guid>https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/</guid>
-  <pubDate>Tue, 20 May 2025 05:00:00 GMT</pubDate>
+  <pubDate>Sun, 01 Jun 2025 05:00:00 GMT</pubDate>
+  <media:content url="https://axiomata.netlify.app/posts/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

@@ -1,79 +1,55 @@
 ---
-documentmode: doc # Modo de documento: Can be jou (journal), man (manuscript), stu (student), or doc (document)
-# - man (Manuscrito): Similar al formato .docx
-# - jou (Revista): Un formato pulido de dos columnas similar a muchas revistas APA.
-# - doc (Documento): Similar al predeterminado LaTex artículos.
-# - stu (Estudiante): Formateado para trabajos de estudiantes
-# MODO ESTUDIANTE (STU)
+documentmode: doc
 course: Economía Matemática I
 professor: Econ. Yupanqui Pillhuaman, William
-duedate: 14/04/2025
-# MODO REVISTA (JOU)
-# journal: The American Economic Review # Econometrica, The American Economic Review, Revista de Economía, Revista de la CEPAL
-# volume: 2025, Vol. 131, No. 2, 10--60
 copyrightnotice: 2025
 copyrightext: All rights reserved
-# image: featured.png
-title: Modelos Económicos
-subtitle: Clásico y Keynesiano
-shorttitle: "Modelos Económicos"
-abstract: |
-  This article examines the Walrasian equilibrium within classical and Keynesian economic models, focusing on the effects of nominal and real rigidities. It presents the assumptions, equations, and policy analyses for the classical model with flexible prices and wages, the Keynesian model with nominal wage rigidity, and models incorporating real and nominal rigidities. Using differential calculus and matrix representations, the study analyzes the impact of fiscal and monetary policies on real and nominal variables, such as output, employment, interest rates, and prices. The classical model demonstrates money neutrality and ineffective fiscal policies due to price flexibility, while the Keynesian model highlights unemployment and effective policy interventions under rigidities. The analysis provides a comprehensive understanding of economic equilibrium dynamics for students and researchers in mathematical economics.
-keywords: [keyword1, keyword2]
+title: Introducción a la economía matemática I
+shorttitle: MODELOS ECONÓMICOS
+abstract: This article examines the Walrasian equilibrium within classical and Keynesian
+  economic models, focusing on the effects of nominal and real rigidities. It presents
+  the assumptions, equations, and policy analyses for the classical model with flexible
+  prices and wages, the Keynesian model with nominal wage rigidity, and models incorporating
+  real and nominal rigidities. Using differential calculus and matrix representations,
+  the study analyzes the impact of fiscal and monetary policies on real and nominal
+  variables, such as output, employment, interest rates, and prices. The classical
+  model demonstrates money neutrality and ineffective fiscal policies due to price
+  flexibility, while the Keynesian model highlights unemployment and effective policy
+  interventions under rigidities. The analysis provides a comprehensive understanding
+  of economic equilibrium dynamics for students and researchers in mathematical economics.
+keywords:
+- keyword1
+- keyword2
 categories:
-  - Matemáticas
-  - Economía Matemática
-  - Macroeconomía
+- Matemáticas
 tags:
-  - mathematics
-  - equilibrio_de_walras
-  - modelos_economicos
-
-# Nota del Autor
+- mathematics
+- modelos_economicos
+- economia_matematica
 author-note:
   status-changes:
-    # Ejemplo: [Nombre del autor] está ahora en [afiliación].
-    affiliation-change: ~
-    # Ejemplo: [Nombre del autor] ha fallecido.
-    deceased: ~
-  # Las divulgaciones se condensan en un párrafo, pero puede iniciar un campo con dos saltos de línea para separarlas: \n\nNew
+    affiliation-change: null
+    deceased: null
   disclosures:
-    # Ejemplo: Este estudio se registró en X (Identificador Y).
-    study-registration: ~
-    # Reconozca y cite los datos/materiales que se van a compartir.
-    data-sharing: ~
-    # Ejemplo: Este artículo se basa en datos publicados en [Referencia].
-    # Ejemplo: Este artículo se basa en la disertación realizada por [cita].
-    related-report: ~
-    # Ejemplo: [Nombre del autor] ha sido consultor remunerado de la Corporación X, que ha financiado este estudio.
+    study-registration: null
+    data-sharing: null
+    related-report: null
     conflict-of-interest: El autor no tiene conflictos de interés que revelar.
-    # Ejemplo: Este estudio ha contado con el apoyo de la subvención [Número de subvención] de [Fuente de financiación].
-    financial-support: ~
-    # Ejemplo: Los autores agradecen a [Persona] por [Motivo].
-    gratitude: ~
-    # Ejemplo. Dado que los autores contribuyen por igual, el orden de autoría se determinó mediante el lanzamiento de una moneda al aire.
-    authorship-agreements: ~
-
-description: "Explora el equilibrio de Walras y modelos económicos clásicos y keynesianos con rigideces. ¡Descubre su impacto en políticas fiscales!" # Texto que se muestra debajo de las etiquetas, no en la página del listado
-# links:
-# - icon: pin-map-fill
-#   name: Collection of maps
-#   url: /project/2024-06-16-ccd-sips #./../talk/2021-03-16-xaringan-deploy-demo/
-# - icon: github
-#   icon_pack: fab
-#   name: R-Ladies template files
-#   url: https://github.com/spcanelon/RLadies-xaringan-template
-# Google Scholar
-# bibliography: mybibliography.bib
+    financial-support: null
+    gratitude: null
+    authorship-agreements: null
+description: 'Fundamentos matemáticos esenciales para el análisis económico: funciones,
+  derivadas, optimización restringida y aplicaciones en teoría micro y macroeconómica.'
+eval: false
 citation:
   type: article-journal
   author:
-    - Edison Achalma
-  pdf-url: https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar/index.pdf
-date: "04/14/2025"
-draft: false # Modo de borrador (false = final, true = borrador)
-eval: false # true(predeterminado): evaluar celda de código, false: no evaluar la celda de código
+  - Edison Achalma
+  pdf-url: https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/index.pdf
+date: 04/14/2025
+draft: false
 jupyter: python3
+image: ../featured.jpg
 ---
 
 # Modelo Clásico: Equilibrio de Walras
