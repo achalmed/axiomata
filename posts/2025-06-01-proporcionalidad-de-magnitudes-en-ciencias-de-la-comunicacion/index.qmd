@@ -3,8 +3,7 @@ documentmode: stu
 course: Matemáticas Aplicadas a la Comunicación
 copyrightnotice: 2025
 copyrightext: All rights reserved
-title: Proporcionalidad de Magnitudes
-shorttitle: null
+title: Proporcionalidad en ciencias comunicación
 abstract: Este trabajo explora los fundamentos matemáticos de la proporcionalidad
   y sus aplicaciones en el campo de las Ciencias de la Comunicación. Se analizan conceptos
   clave como razones, proporciones y magnitudes, junto con sus implementaciones prácticas
@@ -19,14 +18,9 @@ keywords:
 - estrategias mediáticas
 categories:
 - Matemáticas
-- Ciencias de la Comunicación
-- Métodos Cuantitativos
 tags:
-- analisis_de_datos
-- proporciones
-- estrategias_de_comunicacion
-- metricas_digitales
 - mathematics
+- proporcionalidad_comunicacion
 author-note:
   status-changes:
     affiliation-change: null
@@ -48,17 +42,20 @@ author-note:
       de un esfuerzo colectivo, y por ello, mi más profundo reconocimiento a quienes
       hicieron posible su culminación.
     authorship-agreements: null
-description: ''
-bibliography: mybibliography.bib
+description: Aplicación de conceptos matemáticos de proporcionalidad y escalamiento
+  a fenómenos de difusión, audiencia y métricas en ciencias de la comunicación.
+eval: true
 citation:
   type: article-journal
   author:
   - Edison Achalma
-  pdf-url: https://achalmaedison.netlify.app/matematicas/posts/2024-03-31-por-editar/index.pdf
-date: 05/20/2025
+  pdf-url: https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.pdf
+date: 06/01/2025
 draft: false
-eval: true
+bibliography: mybibliography.bib
 jupyter: python3
+image: ../featured.jpg
+duedate: 06/01/2025
 ---
 
 Este trabajo monográfico analiza la aplicación de conceptos matemáticos de proporcionalidad, como la regla de tres, el reparto proporcional en el ámbito de las ciencias de la comunicación. Estas herramientas permiten resolver problemas prácticos, optimizar procesos y tomar decisiones informadas basadas en datos cuantitativos, en un contexto donde la precisión y la eficiencia son esenciales. El objetivo es demostrar cómo estas técnicas matemáticas, fundamentadas en razones y proporciones, se integran en la planificación estratégica, la distribución equitativa de recursos y la evaluación de resultados.
