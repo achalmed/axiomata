@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,6 +12,9 @@
 
 <title>Introducción a la economía matemática I – Edison Achalma B.Sc. Econ.</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -36,15 +39,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../assets/img/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-30b4b9a2d3d7fc4440fb514efb3ce0ba.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c5476e714a85dbfbbcebc64b0d85118e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-cec134992aab4372cb718d1833829c4a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c5476e714a85dbfbbcebc64b0d85118e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-73ea7a29ae0ac8f38264d57f9eb62418.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-06b466aced5058fffa44584b53f99f5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-5389a330c79191949d5bbb2aa435eab0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-06b466aced5058fffa44584b53f99f5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -85,9 +91,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N22QHVXP');</script>
 <!-- End Google Tag Manager -->
+<!-- Metadatos mejorados para Zotero -->
+<meta name="citation_title" content="Introducción a la economía matemática I">
+<meta name="citation_author" content="Edison Achalma">
+<meta name="citation_author_orcid" content="0000-0001-6996-3364">
+<meta name="citation_publication_date" content="14 de abril de 2025">
+<meta name="citation_language" content="es">
+<meta name="citation_keywords" content="?meta:keywords-string">
+<meta name="citation_abstract" content="This article examines the Walrasian equilibrium within classical and Keynesian economic models, focusing on the effects of nominal and real rigidities. It presents the assumptions, equations, and policy analyses for the classical model with flexible prices and wages, the Keynesian model with nominal wage rigidity, and models incorporating real and nominal rigidities. Using differential calculus and matrix representations, the study analyzes the impact of fiscal and monetary policies on real and nominal variables, such as output, employment, interest rates, and prices. The classical model demonstrates money neutrality and ineffective fiscal policies due to price flexibility, while the Keynesian model highlights unemployment and effective policy interventions under rigidities. The analysis provides a comprehensive understanding of economic equilibrium dynamics for students and researchers in mathematical economics.">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Introducción a la economía matemática I",
+  "author": {
+    "@type": "Person",
+    "name": "Edison Achalma",
+    "@id": "https://orcid.org/0000-0001-6996-3364"
+  },
+  "datePublished": "14 de abril de 2025",
+  "description": "This article examines the Walrasian equilibrium within classical and Keynesian economic models, focusing on the effects of nominal and real rigidities. It presents the assumptions, equations, and policy analyses for the classical model with flexible prices and wages, the Keynesian model with nominal wage rigidity, and models incorporating real and nominal rigidities. Using differential calculus and matrix representations, the study analyzes the impact of fiscal and monetary policies on real and nominal variables, such as output, employment, interest rates, and prices. The classical model demonstrates money neutrality and ineffective fiscal policies due to price flexibility, while the Keynesian model highlights unemployment and effective policy interventions under rigidities. The analysis provides a comprehensive understanding of economic equilibrium dynamics for students and researchers in mathematical economics.",
+  "keywords": "?meta:keywords-string",
+  "inLanguage": "es"
+}
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -116,13 +148,14 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="stylesheet" href="../../assets/css/global.css">
+<link rel="stylesheet" href="../../assets/css/components/bibbase.css">
 <meta property="og:title" content="Edison Achalma B.Sc. Econ.">
 <meta property="og:description" content="Investigador y educador que aplica la ciencia de datos de forma que se dé prioridad a la equidad social.">
 <meta property="og:image" content="https://axiomata.netlify.app/economia-matematica/featured.jpg">
-<meta property="og:site_name" content="Actus mercator">
+<meta property="og:site_name" content="Edison Achalma B.Sc. Econ.">
 <meta property="og:locale" content="es_ES">
-<meta name="twitter:title" content="Introducción a la economía matemática I – Edison Achalma B.Sc. Econ.">
+<meta name="twitter:title" content="Introducción a la economía matemática I">
 <meta name="twitter:description" content="Fundamentos matemáticos esenciales para el análisis económico: funciones, derivadas, optimización restringida y aplicaciones en teoría micro y macroeconómica.">
 <meta name="twitter:image" content="https://axiomata.netlify.app/economia-matematica/featured.jpg">
 <meta name="twitter:creator" content="@achalmaedison">
@@ -140,7 +173,169 @@ window.Quarto = {
 <meta name="citation_language" content="es">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -232,16 +427,13 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="198edcd182a186efde93855487f89d6b" class="alert alert-primary hidden"><i class="bi bi-gift quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>¡Bienvenidos a mi mundo! ¡Felices fiestas! Gracias por visitar 🎄</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns" style="position: relative; width: 100%; margin: 0; padding: 0;">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <!-- Incluir imagen de fondo si existe featured.jpg, de lo contrario, partículas -->
     <div id="particles-js"></div>
@@ -249,10 +441,7 @@ window.Quarto = {
   <!-- Contenido principal del bloque de título -->
   <div class="title-block-content">
     <div class="quarto-title-block"><div><h1 class="title">Introducción a la economía matemática I</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/achalmed/axiomata/blob/main/economia-matematica/2025-04-14-economia-matematica-I/index.qmd"><i class="bi"></i></button></div></div>
-                <div class="quarto-categories">
-            <div class="quarto-category">Matemáticas</div>
-          </div>
-        
+    
     <div class="quarto-title-meta-author">
       <div class="quarto-title-meta-heading">Autor/a</div>
       <div class="quarto-title-meta-heading">Afiliación</div>
@@ -282,7 +471,7 @@ window.Quarto = {
         <div>
         <div class="quarto-title-meta-heading">Fecha de última modificación</div>
         <div class="quarto-title-meta-contents">
-          <p class="date-modified">6 de enero de 2026</p>
+          <p class="date-modified">13 de julio de 2026</p>
         </div>
       </div>
         
@@ -302,6 +491,12 @@ window.Quarto = {
       </div>
     </div>
 
+    <!-- Categorías tras los metadatos: fila silenciosa junto a las acciones,
+         sin competir con el título -->
+            <div class="quarto-categories">
+            <div class="quarto-category">Matemáticas</div>
+          </div>
+        
     
     <!-- Cargar script de Particle.js desde CDN, solo si no hay featured.jpg -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
@@ -314,44 +509,42 @@ window.Quarto = {
       </div>
 </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
     <h2 id="toc-title">Contenidos</h2>
    
   <ul>
-  <li><a href="#modelo-clásico-equilibrio-de-walras" id="toc-modelo-clásico-equilibrio-de-walras" class="nav-link active" data-scroll-target="#modelo-clásico-equilibrio-de-walras">Modelo Clásico: Equilibrio de Walras</a>
+  <li><a href="#modelo-clásico-equilibrio-de-walras" id="toc-modelo-clásico-equilibrio-de-walras" class="nav-link active" data-scroll-target="#modelo-clásico-equilibrio-de-walras"><span class="header-section-number">1</span> Modelo Clásico: Equilibrio de Walras</a>
   <ul class="collapse">
-  <li><a href="#supuestos" id="toc-supuestos" class="nav-link" data-scroll-target="#supuestos">Supuestos</a></li>
-  <li><a href="#observaciones" id="toc-observaciones" class="nav-link" data-scroll-target="#observaciones">Observaciones</a></li>
-  <li><a href="#planteamiento" id="toc-planteamiento" class="nav-link" data-scroll-target="#planteamiento">Planteamiento</a></li>
-  <li><a href="#efecto-crowding-out" id="toc-efecto-crowding-out" class="nav-link" data-scroll-target="#efecto-crowding-out">Efecto crowding out</a></li>
+  <li><a href="#supuestos" id="toc-supuestos" class="nav-link" data-scroll-target="#supuestos"><span class="header-section-number">1.1</span> Supuestos</a></li>
+  <li><a href="#observaciones" id="toc-observaciones" class="nav-link" data-scroll-target="#observaciones"><span class="header-section-number">1.2</span> Observaciones</a></li>
+  <li><a href="#planteamiento" id="toc-planteamiento" class="nav-link" data-scroll-target="#planteamiento"><span class="header-section-number">1.3</span> Planteamiento</a></li>
+  <li><a href="#efecto-crowding-out" id="toc-efecto-crowding-out" class="nav-link" data-scroll-target="#efecto-crowding-out"><span class="header-section-number">1.4</span> Efecto crowding out</a></li>
   </ul></li>
-  <li><a href="#modelo-2-salarios-nominales-rígidos-keynesiano" id="toc-modelo-2-salarios-nominales-rígidos-keynesiano" class="nav-link" data-scroll-target="#modelo-2-salarios-nominales-rígidos-keynesiano">Modelo 2: Salarios Nominales Rígidos (Keynesiano)</a>
+  <li><a href="#modelo-2-salarios-nominales-rígidos-keynesiano" id="toc-modelo-2-salarios-nominales-rígidos-keynesiano" class="nav-link" data-scroll-target="#modelo-2-salarios-nominales-rígidos-keynesiano"><span class="header-section-number">2</span> Modelo 2: Salarios Nominales Rígidos (Keynesiano)</a>
   <ul class="collapse">
-  <li><a href="#supuestos-1" id="toc-supuestos-1" class="nav-link" data-scroll-target="#supuestos-1">Supuestos</a></li>
-  <li><a href="#planteamiento-1" id="toc-planteamiento-1" class="nav-link" data-scroll-target="#planteamiento-1">Planteamiento</a></li>
+  <li><a href="#supuestos-1" id="toc-supuestos-1" class="nav-link" data-scroll-target="#supuestos-1"><span class="header-section-number">2.1</span> Supuestos</a></li>
+  <li><a href="#planteamiento-1" id="toc-planteamiento-1" class="nav-link" data-scroll-target="#planteamiento-1"><span class="header-section-number">2.2</span> Planteamiento</a></li>
   </ul></li>
-  <li><a href="#modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" id="toc-modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" class="nav-link" data-scroll-target="#modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido">Modelo 3: Rigideces Reales (Desempleo Clásico - Salario Real Rígido)</a>
+  <li><a href="#modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" id="toc-modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" class="nav-link" data-scroll-target="#modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido"><span class="header-section-number">3</span> Modelo 3: Rigideces Reales (Desempleo Clásico - Salario Real Rígido)</a>
   <ul class="collapse">
-  <li><a href="#supuestos-2" id="toc-supuestos-2" class="nav-link" data-scroll-target="#supuestos-2">Supuestos</a></li>
-  <li><a href="#planteamiento-del-modelo" id="toc-planteamiento-del-modelo" class="nav-link" data-scroll-target="#planteamiento-del-modelo">Planteamiento del Modelo</a></li>
+  <li><a href="#supuestos-2" id="toc-supuestos-2" class="nav-link" data-scroll-target="#supuestos-2"><span class="header-section-number">3.1</span> Supuestos</a></li>
+  <li><a href="#planteamiento-del-modelo" id="toc-planteamiento-del-modelo" class="nav-link" data-scroll-target="#planteamiento-del-modelo"><span class="header-section-number">3.2</span> Planteamiento del Modelo</a></li>
   </ul></li>
-  <li><a href="#modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" id="toc-modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" class="nav-link" data-scroll-target="#modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano">Modelo 4: Rigideces Reales y Nominales (Desempleo Keynesiano)</a>
+  <li><a href="#modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" id="toc-modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" class="nav-link" data-scroll-target="#modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano"><span class="header-section-number">4</span> Modelo 4: Rigideces Reales y Nominales (Desempleo Keynesiano)</a>
   <ul class="collapse">
-  <li><a href="#supuestos-3" id="toc-supuestos-3" class="nav-link" data-scroll-target="#supuestos-3">Supuestos</a></li>
-  <li><a href="#modelo-resumen" id="toc-modelo-resumen" class="nav-link" data-scroll-target="#modelo-resumen">Modelo Resumen</a></li>
-  <li><a href="#planteamiento-del-modelo-1" id="toc-planteamiento-del-modelo-1" class="nav-link" data-scroll-target="#planteamiento-del-modelo-1">Planteamiento del Modelo</a></li>
+  <li><a href="#supuestos-3" id="toc-supuestos-3" class="nav-link" data-scroll-target="#supuestos-3"><span class="header-section-number">4.1</span> Supuestos</a></li>
+  <li><a href="#modelo-resumen" id="toc-modelo-resumen" class="nav-link" data-scroll-target="#modelo-resumen"><span class="header-section-number">4.2</span> Modelo Resumen</a></li>
+  <li><a href="#planteamiento-del-modelo-1" id="toc-planteamiento-del-modelo-1" class="nav-link" data-scroll-target="#planteamiento-del-modelo-1"><span class="header-section-number">4.3</span> Planteamiento del Modelo</a></li>
   </ul></li>
-  <li><a href="#publicaciones-similares" id="toc-publicaciones-similares" class="nav-link" data-scroll-target="#publicaciones-similares">Publicaciones Similares</a></li>
+  <li><a href="#publicaciones-similares" id="toc-publicaciones-similares" class="nav-link" data-scroll-target="#publicaciones-similares"><span class="header-section-number">5</span> Publicaciones Similares</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (apaquarto)</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word (apaquarto)</a></li></ul></div><div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="https://gravatar.com/achalmaedison"><i class="bi bi-link-45deg"></i>Gravatar</a></li></ul></div></nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
+
 
 <style>
   :root {
@@ -398,10 +591,10 @@ window.Quarto = {
 
 
 
-<section id="modelo-clásico-equilibrio-de-walras" class="level1">
-<h1>Modelo Clásico: Equilibrio de Walras</h1>
-<section id="supuestos" class="level2">
-<h2 class="anchored" data-anchor-id="supuestos">Supuestos</h2>
+<section id="modelo-clásico-equilibrio-de-walras" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Modelo Clásico: Equilibrio de Walras</h1>
+<section id="supuestos" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="supuestos"><span class="header-section-number">1.1</span> Supuestos</h2>
 <ul>
 <li><strong>Precios y salarios flexibles:</strong> <span class="math inline">\(W\)</span> y <span class="math inline">\(P\)</span>, <span class="math inline">\(W/P\)</span> salario real.</li>
 <li><strong>Todos los mercados en equilibrio:</strong>
@@ -416,8 +609,8 @@ window.Quarto = {
 <li><strong>Oferta agregada:</strong> Deducida del mercado de trabajo por los salarios reales y nivel de precios, tiene forma perfectamente inelástica.</li>
 </ul>
 </section>
-<section id="observaciones" class="level2">
-<h2 class="anchored" data-anchor-id="observaciones">Observaciones</h2>
+<section id="observaciones" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="observaciones"><span class="header-section-number">1.2</span> Observaciones</h2>
 <ul>
 <li><strong>Variables reales:</strong> Producción (<span class="math inline">\(Y^t\)</span>) y nivel de empleo (<span class="math inline">\(N^t\)</span>).</li>
 <li><strong>Variables nominales:</strong> Tasa de interés (<span class="math inline">\(r\)</span>) y precios (<span class="math inline">\(P\)</span>).</li>
@@ -425,8 +618,8 @@ window.Quarto = {
 <li><strong>Políticas fiscales y de renta:</strong> Ineficientes debido al ajuste automático de precios y salarios.</li>
 </ul>
 </section>
-<section id="planteamiento" class="level2">
-<h2 class="anchored" data-anchor-id="planteamiento">Planteamiento</h2>
+<section id="planteamiento" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="planteamiento"><span class="header-section-number">1.3</span> Planteamiento</h2>
 <ol type="1">
 <li><p><strong>Planteamiento del modelo:</strong></p>
 <p><span class="math display">\[
@@ -583,8 +776,8 @@ d\bar{\pi}
 <p>Esto indica que un aumento en <span class="math inline">\(d\bar{\mathrm{SD}}\)</span> no afecta <span class="math inline">\(Y^t\)</span>, consistente con el modelo clásico, donde el pleno empleo y la flexibilidad de precios neutralizan la política fiscal, afectando solo variables nominales.</p></li>
 </ol>
 </section>
-<section id="efecto-crowding-out" class="level2">
-<h2 class="anchored" data-anchor-id="efecto-crowding-out">Efecto crowding out</h2>
+<section id="efecto-crowding-out" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="efecto-crowding-out"><span class="header-section-number">1.4</span> Efecto crowding out</h2>
 <p>Un aumento en el gasto público (<span class="math inline">\(G\)</span>) incrementa <span class="math inline">\(Y^d\)</span>, lo que inicialmente eleva <span class="math inline">\(Y^t\)</span>. Esto aumenta la demanda de dinero (<span class="math inline">\(M^d &gt; M^s\)</span>), elevando la tasa de interés (<span class="math inline">\(r\)</span>) y reduciendo la inversión (<span class="math inline">\(I\)</span>). En el modelo clásico, <span class="math inline">\(Y^t\)</span> regresa a un nivel menor por el ajuste de precios, pero con una tasa de interés más alta:</p>
 <p><span class="math display">\[
 G \uparrow \rightarrow Y^d \uparrow \rightarrow Y^t \uparrow \rightarrow M^d &gt; M^s \rightarrow r \uparrow \rightarrow I \downarrow.
@@ -593,10 +786,10 @@ G \uparrow \rightarrow Y^d \uparrow \rightarrow Y^t \uparrow \rightarrow M^d &gt
 <p>Si no hay cambio en el tipo de interés, no hay efecto expansivo.</p>
 </section>
 </section>
-<section id="modelo-2-salarios-nominales-rígidos-keynesiano" class="level1">
-<h1>Modelo 2: Salarios Nominales Rígidos (Keynesiano)</h1>
-<section id="supuestos-1" class="level2">
-<h2 class="anchored" data-anchor-id="supuestos-1">Supuestos</h2>
+<section id="modelo-2-salarios-nominales-rígidos-keynesiano" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Modelo 2: Salarios Nominales Rígidos (Keynesiano)</h1>
+<section id="supuestos-1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="supuestos-1"><span class="header-section-number">2.1</span> Supuestos</h2>
 <ul>
 <li><strong>Salario nominal rígido:</strong> <span class="math inline">\(\bar{W}\)</span> es exógeno.</li>
 <li><strong>Equilibrio en el mercado de bienes.</strong></li>
@@ -613,8 +806,8 @@ N^s &gt; N^d \quad (\text{exceso de oferta de trabajo})
 <li><strong>Alto desempleo:</strong> <span class="math inline">\(\frac{dN}{dW} &lt; 0\)</span>.</li>
 </ul>
 </section>
-<section id="planteamiento-1" class="level2">
-<h2 class="anchored" data-anchor-id="planteamiento-1">Planteamiento</h2>
+<section id="planteamiento-1" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="planteamiento-1"><span class="header-section-number">2.2</span> Planteamiento</h2>
 <ol type="1">
 <li><p><strong>Planteamiento del modelo:</strong></p>
 <p><span class="math display">\[
@@ -807,14 +1000,14 @@ N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \\
 <p><a href="imagen2.tex" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><embed src="imagen2.tex" class="img-fluid"></a></p>
 </section>
 </section>
-<section id="modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" class="level1">
-<h1>Modelo 3: Rigideces Reales (Desempleo Clásico - Salario Real Rígido)</h1>
+<section id="modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Modelo 3: Rigideces Reales (Desempleo Clásico - Salario Real Rígido)</h1>
 <p>El salario real es rígido y está dado por:</p>
 <p><span class="math display">\[
 \frac{W}{P} = X \quad (\text{rigidez de salario real}).
 \]</span></p>
-<section id="supuestos-2" class="level2">
-<h2 class="anchored" data-anchor-id="supuestos-2">Supuestos</h2>
+<section id="supuestos-2" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="supuestos-2"><span class="header-section-number">3.1</span> Supuestos</h2>
 <ul>
 <li>Existe desempleo involuntario debido a un salario real <span class="math inline">\(X\)</span> por encima del nivel que garantiza el equilibrio en el mercado de trabajo (<span class="math inline">\(N^s &gt; N^d\)</span>).</li>
 <li>Equilibrio en el mercado de bienes: <span class="math inline">\(Y^t = Y^d\)</span>.</li>
@@ -833,8 +1026,8 @@ M^d &amp;= M^s.
 \end{aligned}
 \]</span></p>
 </section>
-<section id="planteamiento-del-modelo" class="level2">
-<h2 class="anchored" data-anchor-id="planteamiento-del-modelo">Planteamiento del Modelo</h2>
+<section id="planteamiento-del-modelo" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="planteamiento-del-modelo"><span class="header-section-number">3.2</span> Planteamiento del Modelo</h2>
 <ol type="1">
 <li><p><strong>Ecuaciones del modelo:</strong></p>
 <p><span class="math display">\[
@@ -1129,10 +1322,10 @@ L_{Y^t} &amp; L_r &amp; N^d_X \\
 </ol>
 </section>
 </section>
-<section id="modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" class="level1">
-<h1>Modelo 4: Rigideces Reales y Nominales (Desempleo Keynesiano)</h1>
-<section id="supuestos-3" class="level2">
-<h2 class="anchored" data-anchor-id="supuestos-3">Supuestos</h2>
+<section id="modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Modelo 4: Rigideces Reales y Nominales (Desempleo Keynesiano)</h1>
+<section id="supuestos-3" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="supuestos-3"><span class="header-section-number">4.1</span> Supuestos</h2>
 <ul>
 <li><strong>Precios y salarios rígidos:</strong> <span class="math inline">\(\bar{P}\)</span> y <span class="math inline">\(\bar{W}\)</span>.</li>
 <li><strong>Dos fallas de mercado:</strong>
@@ -1144,8 +1337,8 @@ L_{Y^t} &amp; L_r &amp; N^d_X \\
 <li>Las empresas no venden toda su producción a los precios vigentes, por lo que no contratan más trabajadores aunque el salario disminuya.</li>
 </ul>
 </section>
-<section id="modelo-resumen" class="level2">
-<h2 class="anchored" data-anchor-id="modelo-resumen">Modelo Resumen</h2>
+<section id="modelo-resumen" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="modelo-resumen"><span class="header-section-number">4.2</span> Modelo Resumen</h2>
 <p><span class="math display">\[
 \begin{aligned}
 Y^t &amp;= C(Y^t - \bar{T}) + I(r) + \bar{\mathrm{SD}}, \\
@@ -1156,8 +1349,8 @@ N^t &amp;= F^{-1}(Y^t).
 <p><strong>Variables endógenas:</strong> <span class="math inline">\(Y^t\)</span>, <span class="math inline">\(r\)</span>, <span class="math inline">\(N^t\)</span>.</p>
 <p><strong>Variables exógenas:</strong> <span class="math inline">\(\bar{\mathrm{SD}}\)</span>, <span class="math inline">\(\bar{M}\)</span>, <span class="math inline">\(\bar{W}/\bar{P}\)</span>, <span class="math inline">\(\bar{T}\)</span>.</p>
 </section>
-<section id="planteamiento-del-modelo-1" class="level2">
-<h2 class="anchored" data-anchor-id="planteamiento-del-modelo-1">Planteamiento del Modelo</h2>
+<section id="planteamiento-del-modelo-1" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="planteamiento-del-modelo-1"><span class="header-section-number">4.3</span> Planteamiento del Modelo</h2>
 <ol type="1">
 <li><p><strong>Ecuaciones:</strong></p>
 <p><span class="math display">\[
@@ -1321,8 +1514,8 @@ d(\bar{W}/\bar{P})
 </ol>
 </section>
 </section>
-<section id="publicaciones-similares" class="level1">
-<h1>Publicaciones Similares</h1>
+<section id="publicaciones-similares" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Publicaciones Similares</h1>
 <p>Si te interesó este artículo, te recomendamos que explores otros blogs y recursos relacionados que pueden ampliar tus conocimientos. Aquí te dejo algunas sugerencias:</p>
 <ol type="1">
 <li><a href="https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/index.pdf"><i class="fa-regular fa-file-pdf" aria-label="file-pdf"></i></a> <a href="https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I">Economia Matematica I</a></li>
@@ -1333,14 +1526,45 @@ d(\bar{W}/\bar{P})
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reutilización</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-achalma2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Achalma, Edison. 2025. <span>“Introducción a la economía matemática
-I,”</span> April. <a href="https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/">https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/</a>.
+Achalma, Edison. 2025. <em>Introducción a la economía matemática I</em>.
+accepted, April 14. <a href="https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/">https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/</a>.
 </div></div></section></div></main> <!-- /main -->
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N22QHVXP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<!-- ==========================================================================
+  MICROINTERACCIONES — "QUIET LABORATORY" (cargador de módulos)
+  ===========================================================================
+  Inyectado en todas las páginas vía include-after-body (_quarto.yml).
+  El código vive en módulos independientes en assets/js/ (ver su README):
+
+    · navbar.js         → clase .lab-scrolled al hacer scroll
+    · cursor.js         → iluminación que sigue el puntero (--lab-mx/--lab-my)
+    · hero.js           → ajuste del hero de portada al alto visible
+    · scroll-effects.js → aparición escalonada (.lab-reveal/.lab-in)
+
+  Rutas absolutas (/assets/js/...) para funcionar a cualquier profundidad.
+  Sin JS el sitio queda íntegro: nada se oculta por defecto.
+=========================================================================== -->
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/cursor.js"></script>
+<script src="../../assets/js/hero.js"></script>
+<script src="../../assets/js/scroll-effects.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1801,7 +2025,7 @@ I,”</span> April. <a href="https://axiomata.netlify.app/economia-matematica/20
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 Edison Achalma ∙ Made with <a href="https://quarto.org">Quarto</a></p>
+<p>© 2026 Edison Achalma ∙ Made with <a href="https://quarto.org">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
 <p><a class="link-dark me-1" href="../../accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener"><i class="fa-solid fa-universal-access" aria-label="universal-access"></i></a> <a class="link-dark me-1" href="https://fosstodon.org/@achalmaedison" title="mastodon" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i></a> <a class="link-dark me-1" href="https://github.com/achalmed" title="github" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-label="github"></i></a> <a class="link-dark me-1" href="https://linkedin.com/in/achalmaedison" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a></p>

@@ -122,6 +122,7 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -277,6 +278,10 @@ Cristóbal de Huamanga, Portal Independencia N°
 
 
 
+\hypersetup{
+  pdftitle={Proporcionalidad en ciencias comunicaci\'{o}n},
+  pdfauthor={Autor}
+}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -620,6 +625,7 @@ siguiente tabla muestra datos hipotéticos:
 {\caption{{Relación entre Publicaciones en redes sociales e
 Interacciones}{\label{tbl-mytable4}}}}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.7333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.0533}}
@@ -647,6 +653,7 @@ Publicaciones en redes sociales (\(x\), en publicaciones)
 \endlastfoot
 Interacciones (\(y\), en cientos) & 20 & 40 & 60 & 80 & 100 \\
 \end{longtable}
+}
 
 \noindent \emph{Nota.} Elaboración~propia
 
@@ -713,6 +720,7 @@ Para cualquier par de magnitudes directamente proporcionales \(A\) e
 {\caption{{Magnitudes directamente
 proporcionales}{\label{tbl-mytable2}}}}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}llll@{}}
 \toprule\noalign{}
 \(A\) & \(A_1\) & \(A_2\) & \(A_3\) \\
@@ -722,6 +730,7 @@ proporcionales}{\label{tbl-mytable2}}}}
 \endlastfoot
 \(B\) & \(B_1\) & \(B_2\) & \(B_3\) \\
 \end{longtable}
+}
 
 \noindent \emph{Nota.} Elaboración~propia
 
@@ -766,6 +775,7 @@ el \textbf{número de lectores} que visitan el sitio:
 {\caption{{Relación entre Artículos publicados y
 Lectores}{\label{tbl-mytable8}}}}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}llllll@{}}
 \toprule\noalign{}
 Artículos publicados (\(x\)) & 1 & 2 & 3 & 4 & 5 \\
@@ -775,6 +785,7 @@ Artículos publicados (\(x\)) & 1 & 2 & 3 & 4 & 5 \\
 \endlastfoot
 Lectores (\(y\), en cientos) & 15 & 30 & 45 & 60 & 75 \\
 \end{longtable}
+}
 
 \noindent \emph{Nota.} Elaboración~propia
 
@@ -808,6 +819,7 @@ siguiente tabla se muestra los datos:
 {\caption{{Relación entre Tiempo de verificación y Errores en
 publicaciones}{\label{tbl-mytable10}}}}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.7288}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0678}}
@@ -832,6 +844,7 @@ Tiempo de verificación (\(x\), en horas)
 \endlastfoot
 Errores en publicaciones (\(y\), en cantidad) & 40 & 20 & 10 & 5 \\
 \end{longtable}
+}
 
 \noindent \emph{Nota.} Elaboración~propia
 
@@ -905,6 +918,7 @@ cumple:
 {\caption{{Magnitudes inversamente
 proporcionales}{\label{tbl-mytable11}}}}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}llllll@{}}
 \toprule\noalign{}
 \(A\) & \(A_1\) & \(A_2\) & \(A_3\) & \(\dots\) & \(A_n\) \\
@@ -914,6 +928,7 @@ proporcionales}{\label{tbl-mytable11}}}}
 \endlastfoot
 \(B\) & \(B_1\) & \(B_2\) & \(B_3\) & \(\dots\) & \(B_n\) \\
 \end{longtable}
+}
 
 \noindent \emph{Nota.} Elaboración~propia
 
@@ -958,6 +973,7 @@ titulares clickbait} (titulares exagerados para atraer clics) y la
 {\caption{{Relación entre Frecuencia de titulares clickbait y Confianza
 del lector}{\label{tbl-mytable12}}}}
 
+{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.7612}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0597}}
@@ -982,6 +998,7 @@ Frecuencia de titulares clickbait (\(x\), por semana)
 \endlastfoot
 Confianza del lector (\(y\), en escala 1-50) & 5 & 15 & 25 & 45 \\
 \end{longtable}
+}
 
 \noindent \emph{Nota.} Elaboración~propia
 
@@ -1747,7 +1764,7 @@ referencias}\label{bibliografuxeda-y-referencias}
 
 \section{Referencias}
 
-\phantomsection\label{refs}
+\protect\phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
 \bibitem[\citeproctext]{ref-abdounurPreliminarySurveyEmergence2009}
 Abdounur, O. J. (2009). A Preliminary Survey on the Emergence of an
