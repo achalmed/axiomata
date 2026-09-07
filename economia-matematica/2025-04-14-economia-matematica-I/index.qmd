@@ -50,6 +50,7 @@ date: 04/14/2025
 draft: false
 jupyter: python3
 image: ../featured.jpg
+curso: matematicas_i
 ---
 
 # Modelo Clásico: Equilibrio de Walras

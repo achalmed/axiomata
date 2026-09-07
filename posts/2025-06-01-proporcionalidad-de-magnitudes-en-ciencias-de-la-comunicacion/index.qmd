@@ -56,6 +56,7 @@ bibliography: mybibliography.bib
 jupyter: python3
 image: ../featured.jpg
 duedate: 06/01/2025
+curso: matematicas_i
 ---
 
 Este trabajo monográfico analiza la aplicación de conceptos matemáticos de proporcionalidad, como la regla de tres, el reparto proporcional en el ámbito de las ciencias de la comunicación. Estas herramientas permiten resolver problemas prácticos, optimizar procesos y tomar decisiones informadas basadas en datos cuantitativos, en un contexto donde la precisión y la eficiencia son esenciales. El objetivo es demostrar cómo estas técnicas matemáticas, fundamentadas en razones y proporciones, se integran en la planificación estratégica, la distribución equitativa de recursos y la evaluación de resultados.
