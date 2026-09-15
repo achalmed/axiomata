@@ -17,9 +17,7 @@ abstract: This article examines the Walrasian equilibrium within classical and K
   flexibility, while the Keynesian model highlights unemployment and effective policy
   interventions under rigidities. The analysis provides a comprehensive understanding
   of economic equilibrium dynamics for students and researchers in mathematical economics.
-keywords:
-- keyword1
-- keyword2
+keywords: []
 categories:
 - Matemáticas
 tags:
@@ -46,7 +44,7 @@ citation:
   author:
   - Edison Achalma
   pdf-url: https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/index.pdf
-date: 04/14/2025
+date: 2025-04-14
 draft: false
 jupyter: python3
 image: ../featured.jpg

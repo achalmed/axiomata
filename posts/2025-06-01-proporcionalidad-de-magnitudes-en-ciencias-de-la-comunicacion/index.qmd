@@ -50,7 +50,7 @@ citation:
   author:
   - Edison Achalma
   pdf-url: https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.pdf
-date: 06/01/2025
+date: 2025-06-01
 draft: false
 bibliography: mybibliography.bib
 jupyter: python3

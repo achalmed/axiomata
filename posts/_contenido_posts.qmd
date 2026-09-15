@@ -1,1 +1,6 @@
+---
+tipo: fragmento
+titulo: índice de publicaciones de posts; lo genera script_generador_publicacion_similar
+---
+
 1. [{{< fa regular file-pdf >}}](https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.pdf) [Proporcionalidad De Magnitudes En Ciencias De La Comunicacion](https://axiomata.netlify.app/posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion)
