@@ -52,6 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-06b466aced5058fffa44584b53f99f5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,6 +117,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../assets/css/global.css">
 <link rel="stylesheet" href="../../assets/css/components/bibbase.css">
@@ -475,7 +507,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h2 id="toc-title">Contenidos</h2>
    
   <ul>
-  <li><a href="#publicaciones-similares" id="toc-publicaciones-similares" class="nav-link active" data-scroll-target="#publicaciones-similares"><span class="header-section-number">1</span> Publicaciones Similares</a></li>
+  <li><a href="#modelo-clásico-equilibrio-de-walras" id="toc-modelo-clásico-equilibrio-de-walras" class="nav-link active" data-scroll-target="#modelo-clásico-equilibrio-de-walras"><span class="header-section-number">1</span> Modelo Clásico: Equilibrio de Walras</a>
+  <ul class="collapse">
+  <li><a href="#supuestos" id="toc-supuestos" class="nav-link" data-scroll-target="#supuestos"><span class="header-section-number">1.1</span> Supuestos</a></li>
+  <li><a href="#observaciones" id="toc-observaciones" class="nav-link" data-scroll-target="#observaciones"><span class="header-section-number">1.2</span> Observaciones</a></li>
+  <li><a href="#planteamiento" id="toc-planteamiento" class="nav-link" data-scroll-target="#planteamiento"><span class="header-section-number">1.3</span> Planteamiento</a></li>
+  <li><a href="#efecto-crowding-out" id="toc-efecto-crowding-out" class="nav-link" data-scroll-target="#efecto-crowding-out"><span class="header-section-number">1.4</span> Efecto crowding out</a></li>
+  </ul></li>
+  <li><a href="#modelo-2-salarios-nominales-rígidos-keynesiano" id="toc-modelo-2-salarios-nominales-rígidos-keynesiano" class="nav-link" data-scroll-target="#modelo-2-salarios-nominales-rígidos-keynesiano"><span class="header-section-number">2</span> Modelo 2: Salarios Nominales Rígidos (Keynesiano)</a>
+  <ul class="collapse">
+  <li><a href="#supuestos-1" id="toc-supuestos-1" class="nav-link" data-scroll-target="#supuestos-1"><span class="header-section-number">2.1</span> Supuestos</a></li>
+  <li><a href="#planteamiento-1" id="toc-planteamiento-1" class="nav-link" data-scroll-target="#planteamiento-1"><span class="header-section-number">2.2</span> Planteamiento</a></li>
+  </ul></li>
+  <li><a href="#modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" id="toc-modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" class="nav-link" data-scroll-target="#modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido"><span class="header-section-number">3</span> Modelo 3: Rigideces Reales (Desempleo Clásico - Salario Real Rígido)</a>
+  <ul class="collapse">
+  <li><a href="#supuestos-2" id="toc-supuestos-2" class="nav-link" data-scroll-target="#supuestos-2"><span class="header-section-number">3.1</span> Supuestos</a></li>
+  <li><a href="#planteamiento-del-modelo" id="toc-planteamiento-del-modelo" class="nav-link" data-scroll-target="#planteamiento-del-modelo"><span class="header-section-number">3.2</span> Planteamiento del Modelo</a></li>
+  </ul></li>
+  <li><a href="#modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" id="toc-modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" class="nav-link" data-scroll-target="#modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano"><span class="header-section-number">4</span> Modelo 4: Rigideces Reales y Nominales (Desempleo Keynesiano)</a>
+  <ul class="collapse">
+  <li><a href="#supuestos-3" id="toc-supuestos-3" class="nav-link" data-scroll-target="#supuestos-3"><span class="header-section-number">4.1</span> Supuestos</a></li>
+  <li><a href="#modelo-resumen" id="toc-modelo-resumen" class="nav-link" data-scroll-target="#modelo-resumen"><span class="header-section-number">4.2</span> Modelo Resumen</a></li>
+  <li><a href="#planteamiento-del-modelo-1" id="toc-planteamiento-del-modelo-1" class="nav-link" data-scroll-target="#planteamiento-del-modelo-1"><span class="header-section-number">4.3</span> Planteamiento del Modelo</a></li>
+  </ul></li>
+  <li><a href="#publicaciones-similares" id="toc-publicaciones-similares" class="nav-link" data-scroll-target="#publicaciones-similares"><span class="header-section-number">5</span> Publicaciones Similares</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (apaquarto)</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word (apaquarto)</a></li></ul></div><div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="https://gravatar.com/achalmaedison"><i class="bi bi-link-45deg"></i>Gravatar</a></li></ul></div></nav>
     </div>
@@ -528,15 +583,938 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<p>tipo: fragmento titulo: texto de apertura del bloque «Publicaciones similares» (incluido en cada post) —</p>
-<section id="publicaciones-similares" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Publicaciones Similares</h1>
+<section id="modelo-clásico-equilibrio-de-walras" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Modelo Clásico: Equilibrio de Walras</h1>
+<section id="supuestos" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="supuestos"><span class="header-section-number">1.1</span> Supuestos</h2>
+<ul>
+<li><strong>Precios y salarios flexibles:</strong> <span class="math inline">\(W\)</span> y <span class="math inline">\(P\)</span>, <span class="math inline">\(W/P\)</span> salario real.</li>
+<li><strong>Todos los mercados en equilibrio:</strong>
+<ul>
+<li><span class="math inline">\(Y^t = Y^d = Y^s\)</span>: Equilibrio en el mercado de bienes.</li>
+<li><span class="math inline">\(M^d = M^s\)</span>: Equilibrio en el mercado monetario.</li>
+<li><span class="math inline">\(N^t = N^d = N^s\)</span>: Equilibrio en el mercado de trabajo.</li>
+</ul></li>
+<li><strong>Pleno empleo.</strong></li>
+<li><strong>Desempleo voluntario.</strong></li>
+<li><strong>Demanda agregada:</strong> Deducida de la teoría cuantitativa del dinero.</li>
+<li><strong>Oferta agregada:</strong> Deducida del mercado de trabajo por los salarios reales y nivel de precios, tiene forma perfectamente inelástica.</li>
+</ul>
+</section>
+<section id="observaciones" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="observaciones"><span class="header-section-number">1.2</span> Observaciones</h2>
+<ul>
+<li><strong>Variables reales:</strong> Producción (<span class="math inline">\(Y^t\)</span>) y nivel de empleo (<span class="math inline">\(N^t\)</span>).</li>
+<li><strong>Variables nominales:</strong> Tasa de interés (<span class="math inline">\(r\)</span>) y precios (<span class="math inline">\(P\)</span>).</li>
+<li><strong>Neutralidad del dinero:</strong> Un aumento en la oferta monetaria (<span class="math inline">\(\uparrow M\)</span>) implica un aumento proporcional en los precios (<span class="math inline">\(\uparrow P\)</span>), sin afectar las variables reales (<span class="math inline">\(Y^t, N^t\)</span>).</li>
+<li><strong>Políticas fiscales y de renta:</strong> Ineficientes debido al ajuste automático de precios y salarios.</li>
+</ul>
+</section>
+<section id="planteamiento" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="planteamiento"><span class="header-section-number">1.3</span> Planteamiento</h2>
+<ol type="1">
+<li><p><strong>Planteamiento del modelo:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t &amp;= C(Y^t) + I(r - \bar{\pi}) + \bar{\mathrm{SD}}, &amp; \bar{\mathrm{SD}} &amp;= \bar{C} + \bar{G} + \bar{I}, \\
+\frac{\bar{M}}{P} &amp;= L(Y^t, r), \\
+N^t &amp;= N^d \left( \frac{W}{P} \right), \\
+N^t &amp;= N^s \left( \frac{W}{P} \right), \\
+Y^t &amp;= f(N^t),
+\end{aligned}
+\]</span></p>
+<p>donde:</p>
+<ul>
+<li><strong>Variables endógenas:</strong> <span class="math inline">\(Y^t\)</span>, <span class="math inline">\(r\)</span>, <span class="math inline">\(N^t\)</span>, <span class="math inline">\(\frac{W}{P}\)</span>, <span class="math inline">\(P\)</span>.</li>
+<li><strong>Variables exógenas:</strong> <span class="math inline">\(\bar{\mathrm{SD}}\)</span>, <span class="math inline">\(\bar{M}\)</span>, <span class="math inline">\(\bar{\pi}\)</span>.</li>
+</ul></li>
+<li><p><strong>Forma de identidad:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t - C(Y^t) - I(r - \bar{\pi}) - \bar{\mathrm{SD}} &amp;= 0 &amp; &amp;\leftrightarrow \bar{Y}^t = Y^t(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}), \\
+\frac{\bar{M}}{P} - L(Y^t, r) &amp;= 0 &amp; &amp;\leftrightarrow \bar{r} = r(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}), \\
+N^t - N^d \left( \frac{W}{P} \right) &amp;= 0 &amp; &amp;\leftrightarrow \bar{N}^t = N^t(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}), \\
+N^t - N^s \left( \frac{W}{P} \right) &amp;= 0 &amp; &amp;\leftrightarrow \bar{\frac{W}{P}} = \frac{W}{P}(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}), \\
+Y^t - f(N^t) &amp;= 0 &amp; &amp;\leftrightarrow \bar{P} = P(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}),
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Aplicación de diferencial total:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+(1 - C_{Y^t}) dY^t - I_r dr &amp;= -I_r d\bar{\pi} + d\bar{\mathrm{SD}}, \\
+-L_{Y^t} dY^t + L_r dr + \frac{\bar{M}}{P^2} dP &amp;= \frac{d\bar{M}}{P}, \\
+dN^t &amp;= N^d_{\frac{W}{P}} d \left( \frac{W}{P} \right), \\
+dN^t &amp;= N^s_{\frac{W}{P}} d \left( \frac{W}{P} \right), \\
+dY^t &amp;= f'(N^t) dN^t.
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Despejando exógenas:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+(1 - C_{Y^t}) dY^t - I_r dr &amp;= -I_r d\bar{\pi} + d\bar{\mathrm{SD}}, \\
+-L_{Y^t} dY^t + L_r dr - \frac{\bar{M}}{P^2} dP &amp;= -\frac{d\bar{M}}{P}, \\
+dN^t - N^d_{\frac{W}{P}} d \left( \frac{W}{P} \right) &amp;= 0, \\
+dN^t - N^s_{\frac{W}{P}} d \left( \frac{W}{P} \right) &amp;= 0, \\
+dY^t - f'(N^t) dN^t &amp;= 0.
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Matrices:</strong></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+dY^t \\
+dr \\
+dP \\
+dN^t \\
+d \left( \frac{W}{P} \right)
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; -I_r \\
+0 &amp; -\frac{1}{P} &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp;-I_r \\
+0 &amp; 0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+d\bar{\mathrm{SD}} \\
+d\bar{M} \\
+d\bar{\pi}
+\end{bmatrix}.
+\]</span></p></li>
+<li><p><strong>Determinante:</strong></p>
+<p>Calculamos el determinante de la matriz para evaluar la estabilidad del sistema:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix} = \frac{\bar{M} I_r}{P^2} \left( N^d_{\frac{W}{P}} - N^s_{\frac{W}{P}} \right).
+\]</span></p>
+<p>El determinante no es cero, lo que indica que el sistema es invertible y tiene solución única bajo las condiciones del modelo.</p></li>
+<li><p><strong>Análisis de política fiscal:</strong></p>
+<p>Consideramos el efecto de <span class="math inline">\(d\bar{\mathrm{SD}} &gt; 0\)</span>, con <span class="math inline">\(d\bar{M} = 0\)</span>, <span class="math inline">\(d\bar{\pi} = 0\)</span>:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+\frac{dY^t}{d\bar{\mathrm{SD}}} \\
+\frac{dr}{d\bar{\mathrm{SD}}} \\
+\frac{dP}{d\bar{\mathrm{SD}}} \\
+\frac{dN^t}{d\bar{\mathrm{SD}}} \\
+\frac{d \left( \frac{W}{P} \right)}{d\bar{\mathrm{SD}}}
+\end{bmatrix}
+= \begin{bmatrix}
+1 \\
+0 \\
+0 \\
+0 \\
+0
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos:</p>
+<p><span class="math display">\[
+\frac{dY^t}{d\bar{\mathrm{SD}}} = \frac{\det \begin{bmatrix}
+1 &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix}}{\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix}}.
+\]</span></p>
+<p>Numerador:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix} = 0 \quad (\text{primera columna tiene ceros en filas 2--5, y el bloque } 3 \times 3 \text{ da } 0).
+\]</span></p>
+<p>Denominador:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^d_{\frac{W}{P}} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -N^s_{\frac{W}{P}} \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t) &amp; 0
+\end{bmatrix} = \frac{\bar{M} I_r}{P^2} \left( N^d_{\frac{W}{P}} - N^s_{\frac{W}{P}} \right) \neq 0.
+\]</span></p>
+<p>Resultado:</p>
+<p><span class="math display">\[
+\frac{dY^t}{d\bar{\mathrm{SD}}} = \frac{0}{\frac{\bar{M} I_r}{P^2} \left( N^d_{\frac{W}{P}} - N^s_{\frac{W}{P}} \right)} = 0.
+\]</span></p>
+<p>Esto indica que un aumento en <span class="math inline">\(d\bar{\mathrm{SD}}\)</span> no afecta <span class="math inline">\(Y^t\)</span>, consistente con el modelo clásico, donde el pleno empleo y la flexibilidad de precios neutralizan la política fiscal, afectando solo variables nominales.</p></li>
+</ol>
+</section>
+<section id="efecto-crowding-out" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="efecto-crowding-out"><span class="header-section-number">1.4</span> Efecto crowding out</h2>
+<p>Un aumento en el gasto público (<span class="math inline">\(G\)</span>) incrementa <span class="math inline">\(Y^d\)</span>, lo que inicialmente eleva <span class="math inline">\(Y^t\)</span>. Esto aumenta la demanda de dinero (<span class="math inline">\(M^d &gt; M^s\)</span>), elevando la tasa de interés (<span class="math inline">\(r\)</span>) y reduciendo la inversión (<span class="math inline">\(I\)</span>). En el modelo clásico, <span class="math inline">\(Y^t\)</span> regresa a un nivel menor por el ajuste de precios, pero con una tasa de interés más alta:</p>
+<p><span class="math display">\[
+G \uparrow \rightarrow Y^d \uparrow \rightarrow Y^t \uparrow \rightarrow M^d &gt; M^s \rightarrow r \uparrow \rightarrow I \downarrow.
+\]</span></p>
+<p><a href="imagen1.tex" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><embed src="imagen1.tex" class="img-fluid"></a></p>
+<p>Si no hay cambio en el tipo de interés, no hay efecto expansivo.</p>
+</section>
+</section>
+<section id="modelo-2-salarios-nominales-rígidos-keynesiano" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Modelo 2: Salarios Nominales Rígidos (Keynesiano)</h1>
+<section id="supuestos-1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="supuestos-1"><span class="header-section-number">2.1</span> Supuestos</h2>
+<ul>
+<li><strong>Salario nominal rígido:</strong> <span class="math inline">\(\bar{W}\)</span> es exógeno.</li>
+<li><strong>Equilibrio en el mercado de bienes.</strong></li>
+<li><strong>Equilibrio en el mercado monetario.</strong></li>
+<li><strong>Desequilibrio en el mercado de trabajo:</strong> Oferta de trabajo (<span class="math inline">\(N^s\)</span>) mayor a la demanda de trabajo (<span class="math inline">\(N^d\)</span>).</li>
+</ul>
+<p><span class="math display">\[
+N^s &gt; N^d \quad (\text{exceso de oferta de trabajo})
+\]</span></p>
+<ul>
+<li><strong>Desempleo involuntario.</strong></li>
+<li><strong>Oferta agregada:</strong> Deducida de la curva de Phillips.</li>
+<li><strong>Empleo efectivo:</strong> Determinado por la demanda de trabajo, <span class="math inline">\(N^t = N^d\)</span>.</li>
+<li><strong>Alto desempleo:</strong> <span class="math inline">\(\frac{dN}{dW} &lt; 0\)</span>.</li>
+</ul>
+</section>
+<section id="planteamiento-1" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="planteamiento-1"><span class="header-section-number">2.2</span> Planteamiento</h2>
+<ol type="1">
+<li><p><strong>Planteamiento del modelo:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t &amp;= C(Y^t) + I(r - \bar{\pi}) + \bar{\mathrm{SD}}, &amp; \bar{\mathrm{SD}} &amp;= \bar{C} + \bar{G} + \bar{I}, \\
+\frac{\bar{M}}{P} &amp;= L(Y^t, r), \\
+N^t &amp;= N^d \left( \frac{\bar{W}}{P} \right), \\
+Y^t &amp;= f(N^t),
+\end{aligned}
+\]</span></p>
+<p>donde:</p>
+<ul>
+<li><strong>Variables endógenas:</strong> <span class="math inline">\(Y^t\)</span>, <span class="math inline">\(r\)</span>, <span class="math inline">\(N^t\)</span>, <span class="math inline">\(P\)</span>.</li>
+<li><strong>Variables exógenas:</strong> <span class="math inline">\(\bar{\mathrm{SD}}\)</span>, <span class="math inline">\(\bar{M}\)</span>, <span class="math inline">\(\bar{\pi}\)</span>, <span class="math inline">\(\bar{W}\)</span>.</li>
+</ul></li>
+<li><p><strong>Forma de identidad:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t - C(Y^t) - I(r - \bar{\pi}) - \bar{\mathrm{SD}} &amp;= 0 &amp; &amp;\leftrightarrow Y^{t*} = Y^t(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}, \bar{W}), \\
+\frac{\bar{M}}{P} - L(Y^t, r) &amp;= 0 &amp; &amp;\leftrightarrow r^* = r(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}, \bar{W}), \\
+N^t - N^d \left( \frac{\bar{W}}{P} \right) &amp;= 0 &amp; &amp;\leftrightarrow N^{t*} = N^t(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}, \bar{W}), \\
+Y^t - f(N^t) &amp;= 0 &amp; &amp;\leftrightarrow P^* = P(\bar{\mathrm{SD}}, \bar{M}, \bar{\pi}, \bar{W}),
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Aplicando diferenciales:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+(1 - C_{Y^t}) dY^t - I_r dr &amp;= d\bar{\mathrm{SD}} + I_r d\bar{\pi}, \\
+-L_{Y^t} dY^t - L_r dr + \frac{\bar{M}}{P^2} dP &amp;= \frac{d\bar{M}}{P}, \\
+dN^t - N^d_{\frac{\bar{W}}{P}} \left( \frac{d\bar{W}}{P} - \frac{\bar{W}}{P^2} dP \right) &amp;= 0, \\
+dY^t - f'(N^t) dN^t &amp;= 0.
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Despejando exógenas:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+(1 - C_{Y^t}) dY^t - I_r dr &amp;= d\bar{\mathrm{SD}} + I_r d\bar{\pi}, \\
+-L_{Y^t} dY^t - L_r dr - \frac{\bar{M}}{P^2} dP &amp;= -\frac{d\bar{M}}{P}, \\
+dN^t + N^d_{\frac{\bar{W}}{P}} \left( \frac{\bar{W}}{P^2} dP \right) &amp;= N^d_{\frac{\bar{W}}{P}} \left( \frac{d\bar{W}}{P} \right), \\
+dY^t - f'(N^t) dN^t &amp;= 0.
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Matrices:</strong></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}
+\begin{bmatrix}
+dY^t \\
+dr \\
+dP \\
+dN^t
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; I_r &amp; 0 \\
+0 &amp; -\frac{1}{P} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+d\bar{\mathrm{SD}} \\
+d\bar{M} \\
+d\bar{\pi} \\
+d\bar{W}
+\end{bmatrix}.
+\]</span></p></li>
+<li><p><strong>Cálculo del determinante:</strong></p>
+<p><span class="math display">\[
+\Delta = \begin{vmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{vmatrix}.
+\]</span></p>
+<p>Expandiendo por la cuarta fila:</p>
+<p><span class="math display">\[
+\Delta = (-f'(N^t)) \cdot (-1)^{4+4} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2}
+\end{bmatrix}
++ 1 \cdot (-1)^{4+3} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>El segundo determinante es:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix} = -I_r \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>El primer determinante es:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2}
+\end{bmatrix} = N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r \\
+-L_{Y^t} &amp; -L_r
+\end{bmatrix}.
+\]</span></p>
+<p>Calculando:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r \\
+-L_{Y^t} &amp; -L_r
+\end{bmatrix} = (1 - C_{Y^t})(-L_r) - (-I_r)(-L_{Y^t}) = -L_r (1 - C_{Y^t}) - I_r L_{Y^t}.
+\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[
+\Delta = -f'(N^t) \cdot N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} \left[ -L_r (1 - C_{Y^t}) - I_r L_{Y^t} \right] - I_r \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>Factorizando:</p>
+<p><span class="math display">\[
+\Delta = \frac{\bar{M} I_r}{P^2} - f'(N^t) N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} \left[ L_r (1 - C_{Y^t}) + I_r L_{Y^t} \right].
+\]</span></p>
+<p>Dado que <span class="math inline">\(L_r &lt; 0\)</span>, <span class="math inline">\(I_r &lt; 0\)</span>, <span class="math inline">\(1 - C_{Y^t} &gt; 0\)</span>, <span class="math inline">\(L_{Y^t} &gt; 0\)</span>, <span class="math inline">\(f'(N^t) &gt; 0\)</span>, <span class="math inline">\(N^d_{\frac{\bar{W}}{P}} &lt; 0\)</span>, <span class="math inline">\(\bar{M} &gt; 0\)</span>, <span class="math inline">\(P &gt; 0\)</span>, el signo de <span class="math inline">\(\Delta\)</span> depende de los valores, pero típicamente <span class="math inline">\(\Delta &lt; 0\)</span>.</p></li>
+<li><p><strong>Análisis de política fiscal:</strong></p>
+<p>Consideramos <span class="math inline">\(\frac{dN^t}{d\bar{W}}\)</span>, con <span class="math inline">\(d\bar{W} \neq 0\)</span>, <span class="math inline">\(d\bar{\mathrm{SD}} = 0\)</span>, <span class="math inline">\(d\bar{\pi} = 0\)</span>, <span class="math inline">\(d\bar{M} = 0\)</span>:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}
+\begin{bmatrix}
+\frac{dY^t}{d\bar{W}} \\
+\frac{dr}{d\bar{W}} \\
+\frac{dP}{d\bar{W}} \\
+\frac{dN^t}{d\bar{W}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 \\
+0 \\
+N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \\
+0
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos <span class="math inline">\(\frac{dN^t}{d\bar{W}}\)</span> usando el método de Cramer:</p>
+<p><span class="math display">\[
+\frac{dN^t}{d\bar{W}} = \frac{\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} &amp; N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}}{\Delta}.
+\]</span></p>
+<p>Numerador:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2} &amp; N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix} = (-1)^{4+4} \cdot 0 \cdot \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} \\
+0 &amp; 0 &amp; N^d_{\frac{\bar{W}}{P}} \frac{\bar{W}}{P^2}
+\end{bmatrix} + (-1)^{4+3} \cdot N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \cdot \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>El primer término es cero, y el segundo determinante es <span class="math inline">\(-I_r \frac{\bar{M}}{P^2}\)</span>. Entonces:</p>
+<p><span class="math display">\[
+\det = - \left( N^d_{\frac{\bar{W}}{P}} \frac{1}{P} \right) \cdot \left( -I_r \frac{\bar{M}}{P^2} \right) = N^d_{\frac{\bar{W}}{P}} \frac{1}{P} I_r \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>Por lo tanto:</p>
+<p><span class="math display">\[
+\frac{dN^t}{d\bar{W}} = \frac{N^d_{\frac{\bar{W}}{P}} \frac{1}{P} I_r \frac{\bar{M}}{P^2}}{\Delta}.
+\]</span></p>
+<p>Dado que <span class="math inline">\(N^d_{\frac{\bar{W}}{P}} &lt; 0\)</span>, <span class="math inline">\(I_r &lt; 0\)</span>, <span class="math inline">\(\bar{M} &gt; 0\)</span>, <span class="math inline">\(P &gt; 0\)</span>, y <span class="math inline">\(\Delta &lt; 0\)</span>, el signo es:</p>
+<p><span class="math display">\[
+\frac{dN^t}{d\bar{W}} &lt; 0 \quad (\text{Desempleo}).
+\]</span></p></li>
+</ol>
+<p><a href="imagen2.tex" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><embed src="imagen2.tex" class="img-fluid"></a></p>
+</section>
+</section>
+<section id="modelo-3-rigideces-reales-desempleo-clásico---salario-real-rígido" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Modelo 3: Rigideces Reales (Desempleo Clásico - Salario Real Rígido)</h1>
+<p>El salario real es rígido y está dado por:</p>
+<p><span class="math display">\[
+\frac{W}{P} = X \quad (\text{rigidez de salario real}).
+\]</span></p>
+<section id="supuestos-2" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="supuestos-2"><span class="header-section-number">3.1</span> Supuestos</h2>
+<ul>
+<li>Existe desempleo involuntario debido a un salario real <span class="math inline">\(X\)</span> por encima del nivel que garantiza el equilibrio en el mercado de trabajo (<span class="math inline">\(N^s &gt; N^d\)</span>).</li>
+<li>Equilibrio en el mercado de bienes: <span class="math inline">\(Y^t = Y^d\)</span>.</li>
+<li>Equilibrio en el mercado monetario: <span class="math inline">\(M^d = M^s\)</span>.</li>
+<li>Bajo el supuesto de que, ante una política económica, las variables reales (<span class="math inline">\(Y^t\)</span>, <span class="math inline">\(N^t\)</span>) se comportan de manera contracíclica a las variables nominales (<span class="math inline">\(P\)</span>). Además, el salario real está por encima del nivel que vacía el mercado de trabajo, lo que genera desempleo.</li>
+</ul>
+<p><span class="math display">\[
+\frac{dY^t}{dX} &lt; 0, \quad \frac{dN^t}{dX} &lt; 0, \quad \frac{dP}{dX} &gt; 0.
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{W}{P} &amp;= X \quad \Rightarrow \text{rígido}, \\
+N^t &amp;= N^d(X), \\
+Y^t &amp;= Y^s = Y^d, \\
+M^d &amp;= M^s.
+\end{aligned}
+\]</span></p>
+</section>
+<section id="planteamiento-del-modelo" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="planteamiento-del-modelo"><span class="header-section-number">3.2</span> Planteamiento del Modelo</h2>
+<ol type="1">
+<li><p><strong>Ecuaciones del modelo:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t &amp;= C(Y^t - \bar{T}) + I(r - \bar{\pi}) + \bar{\mathrm{SD}}, \quad \bar{\mathrm{SD}} = \bar{I} + \bar{C} + \bar{G}, \\
+\frac{\bar{M}}{P} &amp;= L(Y^t, r), \\
+N^t &amp;= N^d(X), \\
+Y^t &amp;= f(\bar{K}, N^t).
+\end{aligned}
+\]</span></p>
+<p><strong>Variables endógenas:</strong> <span class="math inline">\(Y^t\)</span>, <span class="math inline">\(r\)</span>, <span class="math inline">\(N^t\)</span>, <span class="math inline">\(P\)</span>.</p>
+<p><strong>Variables exógenas:</strong> <span class="math inline">\(\bar{\mathrm{SD}}\)</span>, <span class="math inline">\(\bar{M}\)</span>, <span class="math inline">\(X\)</span>, <span class="math inline">\(\bar{K}\)</span>, <span class="math inline">\(\bar{T}\)</span>, <span class="math inline">\(\bar{\pi}\)</span>.</p></li>
+<li><p><strong>Forma de identidad:</strong></p>
+<p>Reescribimos las ecuaciones como identidades:</p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t - C(Y^t - \bar{T}) - I(r - \bar{\pi}) - \bar{\mathrm{SD}} &amp;= 0, \\
+\frac{\bar{M}}{P} - L(Y^t, r) &amp;= 0, \\
+N^t - N^d(X) &amp;= 0, \\
+Y^t - f(\bar{K}, N^t) &amp;= 0.
+\end{aligned}
+\]</span></p>
+<p>Las variables endógenas dependen funcionalmente de las exógenas:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\tilde{Y}^t &amp;= Y^t(\bar{\mathrm{SD}}, \bar{\pi}, \bar{M}, X), \\
+\tilde{r} &amp;= r(\bar{\mathrm{SD}}, \bar{\pi}, \bar{M}, X), \\
+\tilde{P} &amp;= P(\bar{\mathrm{SD}}, \bar{\pi}, \bar{M}, X), \\
+\tilde{N}^t &amp;= N^t(\bar{\mathrm{SD}}, \bar{\pi}, \bar{M}, X).
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Diferenciales:</strong></p>
+<p>Tomamos la diferencial total de cada ecuación:</p>
+<p><span class="math display">\[
+\begin{aligned}
+(1 - C_{Y^t}) dY^t - I_r dr &amp;= d\bar{\mathrm{SD}} + I_r d\bar{\pi}, \\
+L_{Y^t} dY^t + L_r dr + \frac{\bar{M}}{P^2} dP &amp;= \frac{1}{P} d\bar{M}, \\
+dN^t &amp;= N^d_X dX, \\
+dY^t - f'(N^t) dN^t &amp;= 0.
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Representación matricial:</strong></p>
+<p>Escribimos el sistema en forma matricial <span class="math inline">\(\mathbf{A} \mathbf{x} = \mathbf{B} \mathbf{z}\)</span>:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}
+\begin{bmatrix}
+dY^t \\
+dr \\
+dP \\
+dN^t
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; I_r &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; \frac{1}{P} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; N^d_X \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+d\bar{\mathrm{SD}} \\
+d\bar{\pi} \\
+d\bar{M} \\
+dX
+\end{bmatrix}.
+\]</span></p></li>
+<li><p><strong>Cálculo del determinante:</strong></p>
+<p>La matriz <span class="math inline">\(\mathbf{A}\)</span> es:</p>
+<p><span class="math display">\[
+\mathbf{A} = \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos <span class="math inline">\(\det(\mathbf{A})\)</span> expandiendo por la tercera columna:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}) = \frac{\bar{M}}{P^2} \cdot (-1)^{2+3} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix} + 1 \cdot (-1)^{4+4} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>El primer determinante es 0 (dos filas proporcionales), así que:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}) = \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>Expandimos por la tercera fila:</p>
+<p><span class="math display">\[
+\det = 1 \cdot \det \begin{bmatrix}
+-I_r &amp; 0 \\
+L_r &amp; \frac{\bar{M}}{P^2}
+\end{bmatrix} = -I_r \cdot \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>Dado que <span class="math inline">\(I_r &lt; 0\)</span>, <span class="math inline">\(\bar{M} &gt; 0\)</span>, <span class="math inline">\(P &gt; 0\)</span>, entonces:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}) = -I_r \frac{\bar{M}}{P^2} &gt; 0.
+\]</span></p></li>
+<li><p><strong>Análisis del multiplicador <span class="math inline">\(\frac{dN^t}{dX}\)</span>:</strong></p>
+<p>Consideramos <span class="math inline">\(dX \neq 0\)</span>, <span class="math inline">\(d\bar{\mathrm{SD}} = 0\)</span>, <span class="math inline">\(d\bar{\pi} = 0\)</span>, <span class="math inline">\(d\bar{M} = 0\)</span>:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}
+\begin{bmatrix}
+\frac{dY^t}{dX} \\
+\frac{dr}{dX} \\
+\frac{dP}{dX} \\
+\frac{dN^t}{dX}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 \\
+0 \\
+N^d_X \\
+0
+\end{bmatrix}.
+\]</span></p>
+<p>Usamos el método de Cramer:</p>
+<p><span class="math display">\[
+\frac{dN^t}{dX} = \frac{\det(\mathbf{A}_{dN^t})}{\det(\mathbf{A})},
+\]</span></p>
+<p>donde:</p>
+<p><span class="math display">\[
+\mathbf{A}_{dN^t} = \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; N^d_X \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos el determinante expandiendo por la tercera columna:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}_{dN^t}) = N^d_X \cdot (-1)^{3+4} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; \frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>Usamos el determinante ya calculado:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}_{dN^t}) = -N^d_X \cdot \left( -I_r \frac{\bar{M}}{P^2} \right) = N^d_X I_r \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[
+\frac{dN^t}{dX} = \frac{N^d_X I_r \frac{\bar{M}}{P^2}}{-I_r \frac{\bar{M}}{P^2}} = -N^d_X.
+\]</span></p>
+<p>Dado que <span class="math inline">\(N^d_X &lt; 0\)</span> (la demanda de trabajo disminuye con un mayor salario real), entonces:</p>
+<p><span class="math display">\[
+\frac{dN^t}{dX} &lt; 0.
+\]</span></p>
+<p>Esto es consistente con el modelo clásico con rigidez de salario real: un aumento en <span class="math inline">\(X\)</span> reduce el empleo <span class="math inline">\(N^t\)</span>.</p></li>
+<li><p><strong>Análisis del multiplicador <span class="math inline">\(\frac{dr}{dX}\)</span>:</strong></p>
+<p>Calculamos el efecto de un cambio en el salario real rígido (<span class="math inline">\(X\)</span>) sobre la tasa de interés (<span class="math inline">\(r\)</span>):</p>
+<p><span class="math display">\[
+\frac{dr}{dX} = \frac{\det(\mathbf{A}_{dr})}{\det(\mathbf{A})},
+\]</span></p>
+<p>donde:</p>
+<p><span class="math display">\[
+\mathbf{A}_{dr} = \begin{bmatrix}
+1 - C_{Y^t} &amp; 0 &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; N^d_X &amp; \frac{\bar{M}}{P^2} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos el determinante expandiendo por la tercera columna:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}_{dr}) = 0 \cdot (\text{cofactor}) + 1 \cdot (-1)^{4+4} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; N^d_X &amp; \frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>El determinante es:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; N^d_X &amp; \frac{\bar{M}}{P^2} \\
+1 &amp; 0 &amp; 0
+\end{bmatrix} = 0,
+\]</span></p>
+<p>ya que la tercera columna tiene ceros en la primera y tercera filas. Entonces:</p>
+<p><span class="math display">\[
+\frac{dr}{dX} = \frac{0}{-I_r \frac{\bar{M}}{P^2}} = 0.
+\]</span></p>
+<p>Esto indica que un cambio en el salario real rígido no afecta la tasa de interés, lo que es consistente con el modelo.</p></li>
+<li><p><strong>Análisis del multiplicador <span class="math inline">\(\frac{dY^t}{dX}\)</span>:</strong></p>
+<p><span class="math display">\[
+\frac{dY^t}{dX} = \frac{\det(\mathbf{A}_{dY^t})}{\det(\mathbf{A})},
+\]</span></p>
+<p>donde:</p>
+<p><span class="math display">\[
+\mathbf{A}_{dY^t} = \begin{bmatrix}
+0 &amp; -I_r &amp; 0 &amp; 0 \\
+0 &amp; L_r &amp; \frac{\bar{M}}{P^2} &amp; 0 \\
+N^d_X &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos el determinante:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}_{dY^t}) = 0 \cdot (\text{cofactor}) + (-f'(N^t)) \cdot (-1)^{4+4} \det \begin{bmatrix}
+0 &amp; -I_r &amp; 0 \\
+0 &amp; L_r &amp; \frac{\bar{M}}{P^2} \\
+N^d_X &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>El determinante del bloque es:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+0 &amp; -I_r &amp; 0 \\
+0 &amp; L_r &amp; \frac{\bar{M}}{P^2} \\
+N^d_X &amp; 0 &amp; 0
+\end{bmatrix} = N^d_X \cdot (-1)^{3+1} \det \begin{bmatrix}
+-I_r &amp; 0 \\
+L_r &amp; \frac{\bar{M}}{P^2}
+\end{bmatrix} = N^d_X \cdot (-I_r) \cdot \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}_{dY^t}) = -f'(N^t) \cdot N^d_X \cdot (-I_r) \cdot \frac{\bar{M}}{P^2} = f'(N^t) N^d_X I_r \frac{\bar{M}}{P^2}.
+\]</span></p>
+<p>Por lo tanto:</p>
+<p><span class="math display">\[
+\frac{dY^t}{dX} = \frac{f'(N^t) N^d_X I_r \frac{\bar{M}}{P^2}}{-I_r \frac{\bar{M}}{P^2}} = f'(N^t) N^d_X.
+\]</span></p>
+<p>Dado que <span class="math inline">\(f'(N^t) &gt; 0\)</span> y <span class="math inline">\(N^d_X &lt; 0\)</span>, entonces:</p>
+<p><span class="math display">\[
+\frac{dY^t}{dX} &lt; 0.
+\]</span></p></li>
+<li><p><strong>Análisis del multiplicador <span class="math inline">\(\frac{dP}{dX}\)</span>:</strong></p>
+<p><span class="math display">\[
+\frac{dP}{dX} = \frac{\det(\mathbf{A}_{dP})}{\det(\mathbf{A})},
+\]</span></p>
+<p>donde:</p>
+<p><span class="math display">\[
+\mathbf{A}_{dP} = \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; N^d_X &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos el determinante:</p>
+<p><span class="math display">\[
+\det(\mathbf{A}_{dP}) = N^d_X \cdot (-1)^{2+3} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; -f'(N^t)
+\end{bmatrix} + 1 \cdot (-1)^{4+4} \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; N^d_X \\
+1 &amp; 0 &amp; 0
+\end{bmatrix}.
+\]</span></p>
+<p>El primer determinante es 0, y el segundo es:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+L_{Y^t} &amp; L_r &amp; N^d_X \\
+1 &amp; 0 &amp; 0
+\end{bmatrix} = -N^d_X \cdot \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r \\
+1 &amp; 0
+\end{bmatrix} = -N^d_X \cdot (-I_r) = N^d_X I_r.
+\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[
+\frac{dP}{dX} = \frac{N^d_X I_r}{-I_r \frac{\bar{M}}{P^2}} = -\frac{N^d_X}{\frac{\bar{M}}{P^2}}.
+\]</span></p>
+<p>Dado que <span class="math inline">\(N^d_X &lt; 0\)</span>, <span class="math inline">\(\bar{M} &gt; 0\)</span>, <span class="math inline">\(P &gt; 0\)</span>, entonces:</p>
+<p><span class="math display">\[
+\frac{dP}{dX} &gt; 0.
+\]</span></p></li>
+</ol>
+</section>
+</section>
+<section id="modelo-4-rigideces-reales-y-nominales-desempleo-keynesiano" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Modelo 4: Rigideces Reales y Nominales (Desempleo Keynesiano)</h1>
+<section id="supuestos-3" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="supuestos-3"><span class="header-section-number">4.1</span> Supuestos</h2>
+<ul>
+<li><strong>Precios y salarios rígidos:</strong> <span class="math inline">\(\bar{P}\)</span> y <span class="math inline">\(\bar{W}\)</span>.</li>
+<li><strong>Dos fallas de mercado:</strong>
+<ul>
+<li>Exceso de oferta de bienes: <span class="math inline">\(Y^s &gt; Y^d = Y^t\)</span>.</li>
+<li>Exceso de oferta de trabajo: <span class="math inline">\(N^s &gt; N^d = N^t\)</span>.</li>
+</ul></li>
+<li><strong>Función de producción inversa:</strong> <span class="math inline">\(N^t = F^{-1}(Y^d)\)</span>.</li>
+<li>Las empresas no venden toda su producción a los precios vigentes, por lo que no contratan más trabajadores aunque el salario disminuya.</li>
+</ul>
+</section>
+<section id="modelo-resumen" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="modelo-resumen"><span class="header-section-number">4.2</span> Modelo Resumen</h2>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t &amp;= C(Y^t - \bar{T}) + I(r) + \bar{\mathrm{SD}}, \\
+\frac{\bar{M}}{\bar{P}} &amp;= L(Y^t, r), \\
+N^t &amp;= F^{-1}(Y^t).
+\end{aligned}
+\]</span></p>
+<p><strong>Variables endógenas:</strong> <span class="math inline">\(Y^t\)</span>, <span class="math inline">\(r\)</span>, <span class="math inline">\(N^t\)</span>.</p>
+<p><strong>Variables exógenas:</strong> <span class="math inline">\(\bar{\mathrm{SD}}\)</span>, <span class="math inline">\(\bar{M}\)</span>, <span class="math inline">\(\bar{W}/\bar{P}\)</span>, <span class="math inline">\(\bar{T}\)</span>.</p>
+</section>
+<section id="planteamiento-del-modelo-1" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="planteamiento-del-modelo-1"><span class="header-section-number">4.3</span> Planteamiento del Modelo</h2>
+<ol type="1">
+<li><p><strong>Ecuaciones:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t &amp;= C(Y^t - \bar{T}) + I(r) + \bar{\mathrm{SD}}, \\
+\frac{\bar{M}}{\bar{P}} &amp;= L(Y^t, r), \\
+N^t &amp;= F^{-1}(Y^t).
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Forma de identidad:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^t - C(Y^t - \bar{T}) - I(r) - \bar{\mathrm{SD}} &amp;= 0, \\
+\frac{\bar{M}}{\bar{P}} - L(Y^t, r) &amp;= 0, \\
+N^t - F^{-1}(Y^t) &amp;= 0.
+\end{aligned}
+\]</span></p>
+<p>Las variables endógenas dependen de las exógenas:</p>
+<p><span class="math display">\[
+\begin{aligned}
+Y^{t*} &amp;= Y^t(\bar{\mathrm{SD}}, \bar{M}, \bar{W}/\bar{P}, \bar{T}), \\
+r^* &amp;= r(\bar{\mathrm{SD}}, \bar{M}, \bar{W}/\bar{P}, \bar{T}), \\
+N^{t*} &amp;= N^t(\bar{\mathrm{SD}}, \bar{M}, \bar{W}/\bar{P}, \bar{T}).
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Diferenciales:</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+(1 - C_{Y^t}) dY^t - I_r dr &amp;= d\bar{\mathrm{SD}} - C_T d\bar{T}, \\
+-L_{Y^t} dY^t - L_r dr &amp;= -\frac{1}{\bar{P}} d\bar{M}, \\
+dN^t - (F^{-1})'(Y^t) dY^t &amp;= 0.
+\end{aligned}
+\]</span></p></li>
+<li><p><strong>Matriz:</strong></p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; 0 \\
+-(F^{-1})'(Y^t) &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+dY^t \\
+dr \\
+dN^t
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 &amp; 0 &amp; -C_T &amp; 0 \\
+0 &amp; -\frac{1}{\bar{P}} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+d\bar{\mathrm{SD}} \\
+d\bar{M} \\
+d\bar{T} \\
+d(\bar{W}/\bar{P})
+\end{bmatrix}.
+\]</span></p></li>
+<li><p><strong>Determinante:</strong></p>
+<p><span class="math display">\[
+\Delta = \begin{vmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; 0 \\
+-(F^{-1})'(Y^t) &amp; 0 &amp; 1
+\end{vmatrix}.
+\]</span></p>
+<p>Expandiendo por la tercera columna:</p>
+<p><span class="math display">\[
+\Delta = 1 \cdot \det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r \\
+-L_{Y^t} &amp; -L_r
+\end{bmatrix} = (1 - C_{Y^t})(-L_r) - (-I_r)(-L_{Y^t}) = L_r (1 - C_{Y^t}) + I_r L_{Y^t}.
+\]</span></p>
+<p>Dado que <span class="math inline">\(L_r &lt; 0\)</span>, <span class="math inline">\(I_r &lt; 0\)</span>, <span class="math inline">\(L_{Y^t} &gt; 0\)</span>, <span class="math inline">\(1 - C_{Y^t} &gt; 0\)</span>, entonces <span class="math inline">\(\Delta &gt; 0\)</span>.</p></li>
+<li><p><strong>Política monetaria:</strong></p>
+<p>Consideramos <span class="math inline">\(d\bar{M} \neq 0\)</span>, <span class="math inline">\(d\bar{\mathrm{SD}} = 0\)</span>, <span class="math inline">\(d\bar{T} = 0\)</span>, <span class="math inline">\(d(\bar{W}/\bar{P}) = 0\)</span>:</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; 0 \\
+-(F^{-1})'(Y^t) &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+\frac{dY^t}{d\bar{M}} \\
+\frac{dr}{d\bar{M}} \\
+\frac{dN^t}{d\bar{M}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 \\
+-\frac{1}{\bar{P}} \\
+0
+\end{bmatrix}.
+\]</span></p>
+<p>Calculamos <span class="math inline">\(\frac{dY^t}{d\bar{M}}\)</span>:</p>
+<p><span class="math display">\[
+\frac{dY^t}{d\bar{M}} = \frac{\det \begin{bmatrix}
+0 &amp; -I_r &amp; 0 \\
+-\frac{1}{\bar{P}} &amp; -L_r &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}}{\Delta}.
+\]</span></p>
+<p>Numerador:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+0 &amp; -I_r &amp; 0 \\
+-\frac{1}{\bar{P}} &amp; -L_r &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix} = 1 \cdot \det \begin{bmatrix}
+0 &amp; -I_r \\
+-\frac{1}{\bar{P}} &amp; -L_r
+\end{bmatrix} = -I_r \cdot \frac{1}{\bar{P}}.
+\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[
+\frac{dY^t}{d\bar{M}} = \frac{-\frac{I_r}{\bar{P}}}{L_r (1 - C_{Y^t}) + I_r L_{Y^t}}.
+\]</span></p>
+<p>Dado que <span class="math inline">\(I_r &lt; 0\)</span>, <span class="math inline">\(\bar{P} &gt; 0\)</span>, y <span class="math inline">\(\Delta &gt; 0\)</span>, entonces:</p>
+<p><span class="math display">\[
+\frac{dY^t}{d\bar{M}} &gt; 0.
+\]</span></p>
+<p>Calculamos <span class="math inline">\(\frac{dN^t}{d\bar{M}}\)</span>:</p>
+<p><span class="math display">\[
+\frac{dN^t}{d\bar{M}} = \frac{\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{1}{\bar{P}} \\
+-(F^{-1})'(Y^t) &amp; 0 &amp; 0
+\end{bmatrix}}{\Delta}.
+\]</span></p>
+<p>Numerador:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+1 - C_{Y^t} &amp; -I_r &amp; 0 \\
+-L_{Y^t} &amp; -L_r &amp; -\frac{1}{\bar{P}} \\
+-(F^{-1})'(Y^t) &amp; 0 &amp; 0
+\end{bmatrix} = -(F^{-1})'(Y^t) \cdot (-1)^{3+3} \det \begin{bmatrix}
+-I_r &amp; 0 \\
+-L_r &amp; -\frac{1}{\bar{P}}
+\end{bmatrix}.
+\]</span></p>
+<p>Calculando:</p>
+<p><span class="math display">\[
+\det \begin{bmatrix}
+-I_r &amp; 0 \\
+-L_r &amp; -\frac{1}{\bar{P}}
+\end{bmatrix} = (-I_r) \cdot \left(-\frac{1}{\bar{P}}\right) = \frac{I_r}{\bar{P}}.
+\]</span></p>
+<p>Entonces:</p>
+<p><span class="math display">\[
+\det = -(F^{-1})'(Y^t) \cdot \frac{I_r}{\bar{P}} = -(F^{-1})'(Y^t) \frac{I_r}{\bar{P}}.
+\]</span></p>
+<p>Por lo tanto:</p>
+<p><span class="math display">\[
+\frac{dN^t}{d\bar{M}} = \frac{-(F^{-1})'(Y^t) \frac{I_r}{\bar{P}}}{L_r (1 - C_{Y^t}) + I_r L_{Y^t}}.
+\]</span></p>
+<p>Dado que <span class="math inline">\((F^{-1})'(Y^t) &gt; 0\)</span>, <span class="math inline">\(I_r &lt; 0\)</span>, <span class="math inline">\(\bar{P} &gt; 0\)</span>, y <span class="math inline">\(\Delta &gt; 0\)</span>, entonces:</p>
+<p><span class="math display">\[
+\frac{dN^t}{d\bar{M}} &gt; 0.
+\]</span></p>
+<p>Esto indica que una política monetaria expansiva (<span class="math inline">\(d\bar{M} &gt; 0\)</span>) aumenta la producción (<span class="math inline">\(Y^t\)</span>) y el empleo (<span class="math inline">\(N^t\)</span>), comportándose de manera procíclica con las variables reales y contracíclica con la tasa de interés (si <span class="math inline">\(dr/d\bar{M} &lt; 0\)</span>).</p></li>
+</ol>
+<!-- fragmento de inclusión — texto de apertura del bloque «Publicaciones similares» (incluido en cada post) -->
+</section>
+</section>
+<section id="publicaciones-similares" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Publicaciones Similares</h1>
 <p>Si te interesó este artículo, te recomendamos que explores otros blogs y recursos relacionados que pueden ampliar tus conocimientos. Aquí te dejo algunas sugerencias:</p>
+<!-- fragmento de inclusión — índice de publicaciones de economia-matematica; lo genera script_generador_publicacion_similar -->
 <ol type="1">
 <li><a href="https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/index.pdf"><i class="fa-regular fa-file-pdf" aria-label="file-pdf"></i></a> <a href="https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I">Economia Matematica I</a></li>
 </ol>
-<hr>
-<p>tipo: fragmento titulo: texto de cierre del bloque «Publicaciones similares» (incluido en cada post) —</p>
+<!-- fragmento de inclusión — texto de cierre del bloque «Publicaciones similares» (incluido en cada post) -->
 <p>Esperamos que encuentres estas publicaciones igualmente interesantes y útiles. ¡Disfruta de la lectura!</p>
 
 
@@ -1074,6 +2052,38 @@ accepted, April 14. <a href="https://axiomata.netlify.app/economia-matematica/20
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
