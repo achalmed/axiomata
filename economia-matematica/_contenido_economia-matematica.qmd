@@ -1,6 +1,3 @@
----
-tipo: fragmento
-titulo: índice de publicaciones de economia-matematica; lo genera script_generador_publicacion_similar
----
+<!-- fragmento de inclusión — índice de publicaciones de economia-matematica; lo genera script_generador_publicacion_similar -->
 
 1. [{{< fa regular file-pdf >}}](https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I/index.pdf) [Economia Matematica I](https://axiomata.netlify.app/economia-matematica/2025-04-14-economia-matematica-I)
