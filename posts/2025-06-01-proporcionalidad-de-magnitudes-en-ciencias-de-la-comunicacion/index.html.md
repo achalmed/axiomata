@@ -251,7 +251,7 @@ $$
 
 La relación directamente proporcional se representa como una línea recta que pasa por el origen. 
 
-::: {#4d5dfb23 .cell}
+::: {#214ad44a .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -373,7 +373,7 @@ $$
 
 La relación inversamente proporcional se visualiza como una curva hiperbólica.
 
-::: {#7209369b .cell}
+::: {#9f19a4ed .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -532,7 +532,7 @@ Los proyectos reciben S/ 1,500, S/ 4,500 y S/ 6,000, respectivamente.
 
 La siguiente gráfica ilustra cómo se distribuye el presupuesto según las proporciones:
 
-::: {#44cb835d .cell}
+::: {#d1677cf1 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -608,7 +608,7 @@ Los equipos reciben aproximadamente S/ 34,286, S/ 17,143 y S/ 8,571, respectivam
 
 La siguiente gráfica se muestra cómo se distribuye el fondo según el tiempo de entrega:
 
-::: {#23c8fe0d .cell}
+::: {#72fe68cf .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -681,7 +681,7 @@ Tomará 10 horas escribir 5 artículos.
 
 La siguiente gráfica muestra la relación proporcional entre artículos y tiempo:
 
-::: {#bfbec9c5 .cell}
+::: {#74202620 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -745,7 +745,7 @@ Con 12 máquinas, tomará aproximadamente 2.67 horas.
 
 La siguiente gráfica muestra la relación inversa entre máquinas y tiempo:
 
-::: {#624d37ac .cell}
+::: {#45beb875 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -919,7 +919,7 @@ Se necesitan 21 horas para producir 7 videos.
 
 **Gráfica**:
 
-::: {#2e4b0439 .cell}
+::: {#ad03c715 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -977,7 +977,7 @@ Con 10 diseñadores, se tardarán 5 días.
 
 **Gráfica**:
 
-::: {#7dd856ca .cell}
+::: {#56e148df .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -1051,7 +1051,7 @@ Las campañas reciben S/ 3,000, S/ 4,500 y S/ 7,500, respectivamente.
 
 **Gráfica**:
 
-::: {#912c95ae .cell}
+::: {#ce029fa8 .cell}
 ``` {.python .cell-code}
 import matplotlib.pyplot as plt
 import numpy as np
