@@ -1,0 +1,10 @@
+# _documentos.tsv — GENERADO por scripts/documentos.py; no editar
+# Caché del modo documentos (render.sh --documentos): una fila por página y formato; la clave es el sha256 de la
+# fuente y de la fecha de la página; sha256 es el de la salida en _site/. Ver web/docs/decisiones.md §4.5.
+fuente	formato	salida	clave	sha256
+404.qmd	-	-	9a8dbe384a3458d9c2e6917dbd21dfd40bfd989e76ddea32cbee376622796fef	-
+economia-matematica/2025-04-14-economia-matematica-I/index.qmd	apaquarto-docx	economia-matematica/2025-04-14-economia-matematica-I/index.docx	d03bd92cfb5bc92ee92d21abe797d85f3189857a5e241788b7ef6ac341deb0ec	509206fa04cc41e596e249d4ad169a62b7999d43b609c126d599da8fbc77dd0b
+economia-matematica/2025-04-14-economia-matematica-I/index.qmd	apaquarto-pdf	economia-matematica/2025-04-14-economia-matematica-I/index.pdf	d03bd92cfb5bc92ee92d21abe797d85f3189857a5e241788b7ef6ac341deb0ec	3d5b6014ba551b2996e51c4eb5e8e641c2133609587b938f9b03a70d219d2ec3
+index.qmd	-	-	327279c130ccb3e862c8eeb1c8ec0454e26178dea4b15d3a9a6470994e4803cb	-
+posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.qmd	apaquarto-docx	posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.docx	8af3bbf4723ae831bb05b9fcfef639802ec166a953f6d1deee9f0a7d1f83c73b	a44e8fddbf1df30b19b93718b606877dc2ea1d25156ab96c17911455242052ec
+posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.qmd	apaquarto-pdf	posts/2025-06-01-proporcionalidad-de-magnitudes-en-ciencias-de-la-comunicacion/index.pdf	8af3bbf4723ae831bb05b9fcfef639802ec166a953f6d1deee9f0a7d1f83c73b	bec3a7073654c740ab63736bcc7f2d8399e32db5a538052b28ae0f1544bca93b
