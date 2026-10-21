@@ -4,11 +4,11 @@ estado: activo
 ---
 # axiomata/ — Matemática: blog satélite del hub `web` (repo axiomata, axiomata.netlify.app)
 
-<!-- GENERADO por `web/scripts/pubs.py readme --aplicar` desde `web/_pubs/pubs.yml` (2026-10-20); no editar aquí: se regenera desde el hub -->
+<!-- GENERADO por `web/scripts/pubs.py readme --aplicar` desde `web/_pubs/pubs.yml` (2026-10-21); no editar aquí: se regenera desde el hub -->
 
 ## Qué es
 
-Cálculo, álgebra lineal, estadística y matemáticas aplicadas a la economía. Es uno de los 11 blogs satélite de la familia Quarto de Edison Achalma: un sitio Quarto
+Cálculo, álgebra lineal, estadística y matemáticas aplicadas a la economía. Es uno de los blogs satélite de la familia Quarto de Edison Achalma: un sitio Quarto
 con repositorio y sitio Netlify propios, incluido como submódulo git en el hub `web` (repo
 `website-achalma`) bajo `web/_pubs/axiomata/`. El mismo blog tiene tres nombres: carpeta `axiomata`, repo
 GitHub `achalmed/axiomata` y dominio `axiomata.netlify.app`; el registro de los tres es `web/_pubs/pubs.yml`.
